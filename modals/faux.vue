@@ -27,7 +27,7 @@
       </div>
       <div class="media">
         <a href="https://faux-noticiario.netlify.app/" class="noti" target="_blank">
-          <video autoplay loop muted src="/img/faux/video_web_noticiario.mp4"></video>
+          <!-- <video autoplay loop muted src="/img/faux/video_web_noticiario.mp4"></video> -->
           <div class="link"> <svg xmlns="http://www.w3.org/2000/svg" width="23" height="9" fill="none"
               viewBox="0 0 23 9">
               <path
@@ -36,7 +36,7 @@
             </svg> noticiario</div>
         </a>
         <a href="https://faux-site.netlify.app/" class="site" target="_blank">
-          <video autoplay loop muted src="/img/faux/video_web_site.mp4"></video>
+          <!-- <video autoplay loop muted src="/img/faux/video_web_site.mp4"></video> -->
           <div class="link"> <svg xmlns="http://www.w3.org/2000/svg" width="23" height="9" fill="none"
               viewBox="0 0 23 9">
               <path
