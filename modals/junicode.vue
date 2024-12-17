@@ -208,7 +208,7 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
   
 @font-face
   font-family: "Junicode_mod_var"
-  src: url("/public/fonts/junicode_prueba_xport1.otf") format("opentype")
+  src: url("/fonts/junicode_prueba_xport1.otf") format("opentype")
 
   .module_1
     display: flex
