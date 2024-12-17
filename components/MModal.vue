@@ -1,18 +1,21 @@
 <template>
   <div class="relative z-50">
-    <div
-      class="fixed inset-0 transition-opacity bg-gray-200/75 dark:bg-gray-800/75 pointer-events-none"
-    />
-    <div class="fixed inset-0 overflow-y-auto">
-      <div
-        class="flex min-h-full items-start sm:items-center justify-center text-center p-4 sm:p-0"
-      >
-        <div
-          class="relative text-left rtl:text-right overflow-hidden w-full flex flex-col bg-white dark:bg-gray-900 shadow-xl sm:max-w-lg rounded-lg sm:my-8"
-        >
-          <slot />
-        </div>
+    <div class="aa fixed inset-0 bg-white bg-opacity-75">
+      <div class="modal fixed inset-0 pt-4 pl-8 pr-8 ">
+        <slot />
       </div>
     </div>
   </div>
 </template>
+
+<style scoped lang="sass">
+@media (max-width: 640px)
+  .aa
+    --tw-bg-opacity: 0.9
+    .modal
+      padding-left: 0
+      padding-right: 0
+      padding-top: 0
+      margin: 2.5vw 2.5vw
+      margin-top: -.1rem
+</style>

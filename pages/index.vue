@@ -1,15 +1,111 @@
+<!-- ---------------------- ESTE ES EL HOME --------------- -->
 <template>
+  <CustomCursor />
   <div>
     <NuxtLayout>
-      <h1 class="text-5xl">Hello world</h1>
-      <div class="flex gap-5 mt-10">
-        <UButton prefetch to="/test" color="gray">Test page</UButton>
-        <UButton prefetch to="/child-page/one" color="gray">
-          /child-page/one
-        </UButton>
-        <UButton prefetch to="/bar" color="emerald">Bar modal!!!</UButton>
-        <UButton prefetch to="/foo">Foo modal</UButton>
-      </div>
+
     </NuxtLayout>
   </div>
+
+  <div class="home mx-auto pt-6 pl-8">
+    <div class="nav_holder fixed bottom-[0] w-full">
+      <Navigation />
+    </div>
+    <div class="nav_mobile_holder hidden fixed bottom-[0] w-full">
+      <Navigation_mobile />
+    </div>
+    <div class="projects_gallery flex flex-wrap gap-[1vw] max-w-[70%]">
+      <Card class="card" v-for="(card) in cards" :page="card.page" :project_tumbnail="card.project_tumbnail"
+        :project_date="card.project_date" v-bind:project_title="card.project_title"
+        :posterized_thumbnail="card.posterized_thumbnail" />
+      <Card_small class="small_card" v-for="(smallCard) in smallCards" :page="smallCard.page"
+        :project_tumbnail="smallCard.project_tumbnail" :project_date="smallCard.project_date"
+        v-bind:project_title="smallCard.project_title" :posterized_thumbnail="smallCard.posterized_thumbnail" />
+    </div>
+    
+  </div>
 </template>
+
+
+<script setup>
+import { ref } from 'vue';
+import Navigation_mobile from '~/components/navigation_mobile.vue';
+
+const cards = ref([
+  {
+    id: 1,
+    project_title: 'Faux',
+    project_date: '09/2023',
+    project_tumbnail: '/img/faux/faux_thumbnail.webp',
+    posterized_thumbnail: '/img/faux/faux_trshld_thumbnail_4x.webp',
+    page: '/faux',
+  },
+  {
+    id: 2,
+    project_title: 'Junicode Modular',
+    project_date: '03/2024',
+    project_tumbnail: '/img/junicode/junicode_specimen_thumbnail.webp',
+    posterized_thumbnail: '/img/junicode/junicode_specimen_thumbnail.webp',
+    page: '/junicode',
+  },
+  {
+    id: 3,
+    project_title: 'Sala Equis',
+    project_date: '12/2023',
+    project_tumbnail: '/img/SALAEQUIS/salaequis_thumbail.webp',
+    posterized_thumbnail: '/img/SALAEQUIS/salaequis_trshld.webp',
+    page: '/salaequis',
+  }
+])
+
+const smallCards = ref([
+  {
+    id: 1,
+    project_title: 'Arrow Index',
+    project_date: '02/2024',
+    project_tumbnail: '/img/arrow_index/arrows_thumbnail.gif',
+    posterized_thumbnail: '/img/arrow_index/arrows_trshld_thumbnail.webp',
+    page: 'arrow_index',
+  },
+])
+</script>
+
+
+<style scoped lang="sass">
+/* Media query para móviles (max-width: 640px) */
+@media (max-width: 640px)
+  .home
+    padding-top: 0
+    padding-left: 0
+    overflow-y: auto // Habilita el scroll en el contenedor principal 
+    height: 100vh // Asegura que ocupe toda la altura del viewport 
+
+    /* Galería de proyectos */
+    .projects_gallery
+      padding-top: .2rem
+      justify-content: center
+      align-items: center
+      margin: 2.5vw 2.5vw
+      // display: flex
+      // flex-direction: column
+      // gap: 1rem
+      display: grid
+      grid-template-columns: repeat(2,1fr)
+      width: 100%  
+      gap: 1rem
+      .card
+        grid-column: span 2 
+      .small_card
+        width: 100%
+    /* Navegación fija en la parte superior 
+    .nav_holder
+      display: none
+    .nav_mobile_holder
+      position: sticky // Se mantiene fija respecto al contenedor que hace scroll 
+      top: 0 // Queda anclada en la parte superior 
+      z-index: 10 // Asegura que esté por encima de otros elementos 
+      width: 100%
+      background: white
+      display: block
+  </style>
+

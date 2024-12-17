@@ -1,5 +1,5 @@
-import type { NuxtPage } from "nuxt/schema";
 
+import type { NuxtPage } from "nuxt/schema";
 const findRouteByName = (
   name: string,
   routes: NuxtPage[]

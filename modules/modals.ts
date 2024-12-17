@@ -10,7 +10,7 @@ export default defineNuxtModule({
     nuxt.hook("pages:extend", async (pages) => {
       const modals = await resolveModalsRoutes();
       pushRecursively(pages, modals);
-      console.log("log: modals", modals, JSON.stringify(pages, null, 4));
+      // console.log("log: modals", modals, JSON.stringify(pages, null, 4));
     });
   },
 });

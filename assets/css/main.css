@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Univers LT Std';
+    cursor: url('/crosscursor.svg') 12 12, auto;
+
+}
+
+/* -----------COLOR RESALTADO---------------------------------------------------- */
+
+::selection {
+    background-color: transparent !important; /* Color de fondo */
+    color: #ff5e00; /* Color del texto */
+  }
+
+
+
+
+/* -----------ESTILOS DE TEXTO---------------------------------------------------- */
+
+.font_body_md {
+    font-family: 'Univers LT Std';
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+}
+
+.font_body_md_gris {
+    font-family: 'Univers LT Std';
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #B7B7B7;
+
+}
+.font_body_md_gris:hover {
+    color: #000000;
+
+}
+
+.fecha_card_proy{
+    font-family: "Univers LT Std";
+    color: #B7B7B7;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px; 
+}
+
+.title_proj{
+    font-family:"Univers LT Std";
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 54px; 
+    
+}
+
+.font_heading_md{
+    font-family: 'Univers LT Std';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.annotation{
+    font-family:"Univers LT Std";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 14px; 
+    color: #B7B7B7;
+
+}
+
+.info{
+    font-family: "Univers LT Std";
+    font-size: 14px;
+    font-weight: condensed;
+    line-height: normal;
+}
+.info_gray{
+    font-family: "Univers LT Std";
+    font-size: 14px;
+    font-weight: condensed;
+    line-height: normal;
+    color: #B7B7B7;
+}
+
+.junicode{
+    font-family:"Junicode_mod_var";
+    font-size: 24px;
+    font-style: normal;
+}
+
+/* -----------FONT FACES ---------------------------------------------------- */
+
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('/fonts/UniversLTStd.woff2') format('woff2'),
+        url('/fonts/UniversLTStd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('/fonts/UniversLTStd-Light.woff2') format('woff2'),
+        url('/fonts/UniversLTStd-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('/fonts/UniversLTStd-BoldCnObl.woff2') format('woff2'),
+        url('/fonts/UniversLTStd-BoldCnObl.woff') format('woff');
+    font-weight: condensed;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('/fonts/UniversLTStd-Bold.woff2') format('woff2'),
+        url('/fonts/UniversLTStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('/fonts/UniversLTStd-BoldCn.woff2') format('woff2'),
+        url('/fonts/UniversLTStd-BoldCn.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('/fonts/UniversLTStd-Cn.woff2') format('woff2'),
+        url('/fonts/UniversLTStd-Cn.woff') format('woff');
+    font-weight: condensed;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('/fonts/UniversLTStd-Obl.woff2') format('woff2'),
+        url('/fonts/UniversLTStd-Obl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+  @font-face {
+    font-family: 'Junicode_mod_var';
+    src: url('/public/fonts/junicode_prueba_xport1.otf') format('otf');
+  }
