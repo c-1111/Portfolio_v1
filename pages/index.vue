@@ -77,20 +77,15 @@ const smallCards = ref([
   .home
     padding-top: 0
     padding-left: 0
-    overflow-y: auto // Habilita el scroll en el contenedor principal 
     height: 100vh // Asegura que ocupe toda la altura del viewport 
-
+    background: white
     /* Galería de proyectos */
     .projects_gallery
       padding-top: 2.4rem
       justify-content: center
       align-items: center
       margin-left: 2.5vw 
-      // margin-right: 2.5vw 
-
-      // display: flex
-      // flex-direction: column
-      // gap: 1rem
+      margin-bottom: 4rem
       display: grid
       grid-template-columns: repeat(2,1fr)
       width: 100%  
@@ -99,7 +94,6 @@ const smallCards = ref([
         grid-column: span 2 
       .small_card
         width: 100%
-    /* Navegación fija en la parte superior 
     .nav_holder
       display: none
     .nav_mobile_holder
