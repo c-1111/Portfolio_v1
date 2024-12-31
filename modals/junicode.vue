@@ -67,12 +67,23 @@
         </div>
       </div>
       <div class="text_mobile hidden">
-        <div class="project_title bg-white title_proj">Junicode Modular <input type="checkbox" checked
-            class="mobile_title_checkbox cursor-pointer hidden" @click="openMobileText">
+        <div class="text_mobile_top">
+          <div class="project_title title_proj">Title</div>
+          <div class="text_top_right">
+            <p class="home_info_txt info_gray text-sm text-[#bebebe]">Junicode Modular</p>
+            <svg width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4 6.47399C3.57835 6.71291 3.21368 6.95954 2.90598 7.21387C2.59829 7.46821 2.34758 7.73025 2.15385 8L1.84615 8C1.44729 7.46821 0.831909 6.95954 -6.67041e-08 6.47399L-8.43908e-08 6.06936C0.387464 6.19268 0.729345 6.31599 1.02564 6.43931C1.31054 6.56262 1.54986 6.68208 1.74359 6.79769L2.25641 6.79769C2.43875 6.68208 2.67806 6.56262 2.97436 6.43931C3.25926 6.31599 3.60114 6.19268 4 6.06936L4 6.47399ZM2.35897 6.85549L1.64103 6.85549L1.64103 4.05106e-07L2.35897 3.73723e-07L2.35897 6.85549Z"
+                fill="#B7B7B7" />
+            </svg>
+            <div class="checkbox">
+              <CustomCheckbox @click="openMobileText" />
+            </div>
+          </div>
         </div>
         <div class="text_holder font_body_md" v-show="isVisible">
-          <span class="">Desarrollo de una tipografía modular variable generando la variabilidad desde los módulos que la componen. Se trata de la pequeña escala a un proyecto de desarrollo de software que permita modularizar toda tipografía dada. Junicode es una tipografía open-source desarrollada por Medieval Unicode Font Initiative en base a documentos de 1700-1705. Este proyecto ha sido desarrollado en Fontlab 8 para la asignatura de tipografía experimental.</span>
-          <span class="annotation"></span>
+          <span class="bg-white">Desarrollo de una tipografía modular variable generando la variabilidad desde los módulos que la componen. Se trata de la pequeña escala a un proyecto de desarrollo de software que permita modularizar toda tipografía dada. Junicode es una tipografía open-source desarrollada por Medieval Unicode Font Initiative en base a documentos de 1700-1705. Este proyecto ha sido desarrollado en Fontlab 8 para la asignatura de tipografía experimental.</span>
+          <span class="bg-white annotation"><br></span>
         </div>
       </div>
     </div>
@@ -174,7 +185,7 @@ onBeforeUnmount(() => {
   window.removeEventListener('keydown', handleKeydown);
 });
 
-const isVisible = ref(true);
+const isVisible = ref(false);
 const openMobileText = () => { isVisible.value = !isVisible.value; }
 
 </script>
@@ -345,8 +356,10 @@ input[type="range"]
     height: 100%
     overflow-y: auto
     overflow-x: hidden
-    height: 100% // Asegura que ocupe toda la altura del viewport 
+    height: 100% 
     align-items: center
+    display: flex
+    flex-direction: column-reverse
     .project_top
       display: flex
       flex-direction: column
@@ -359,15 +372,15 @@ input[type="range"]
         gap: .5rem
         .abc
           line-height: 1.7rem
-
     .font_playground
       width: 100%
       flex-direction: column
+      padding-bottom: 0
+      height: fit-content
       .module_1
-
       .font-tester
         width: 100%
-
+        padding-bottom: 0
         .sliders
           flex-direction: column
           width: 100%
@@ -378,9 +391,7 @@ input[type="range"]
             .size_mobile
               display: block
             label
-
             span
-
         textarea
           width: 100%
           all: unset
@@ -395,33 +406,54 @@ input[type="range"]
           font-size: inherit
           font-family: inherit
           resize: none
-          padding-top: 1rem
           &::-webkit-scrollbar
             display: none
             scrollbar-width: none
       input[type="range"]
         width: 100%
       .gallery_holder
+        visibility: hidden
         display: none
-    .text_mobile
-      display: block
+  .text_mobile
+    display: block
+    width: 100%
+    padding-right: 2.5vw
+    position: fixed
+    bottom: 0
+    .text_mobile_top
+      display: flex
       width: 100%
-      position: fixed
-      z-index: 100
-      bottom: -.1rem
+      justify-content: space-between
+      align-items: center
+      background: white
+
+      margin-bottom: -.8rem
       .project_title
         display: flex
         gap: .5rem
         align-items: center
-        background: white
         width: fit-content
         padding-right: 1rem
-        .mobile_title_checkbox
-          display: block
-          transform: scale(1.5)
-          background: white
-      .text_holder
-        margin-right: 5vw
-        background: white
-        padding-bottom: 2vh   
+      .text_top_right
+        display: flex
+        gap: .5rem
+        align-items: center
+        width: fit-content
+        padding-left: 1rem
+        height: 100%
+        padding-top: 1.1rem
+        padding-bottom: 1rem
+        padding-right: 2.5vw
+
+        .home_info_txt
+        svg
+          transform: rotate(180deg)
+        .checkbox
+    .text_holder
+      width: 100%
+      margin-right: 5vw
+      background: white
+      padding-top: .5rem
+      padding-right: 2.5vw
+      padding-bottom: 2vh
 </style>

@@ -11,7 +11,7 @@
     <div class="nav_holder fixed bottom-[0] w-full">
       <Navigation />
     </div>
-    <div class="nav_mobile_holder hidden fixed bottom-[0] w-full">
+    <div class="nav_mobile_holder hidden fixed w-full">
       <Navigation_mobile />
     </div>
     <div class="projects_gallery flex flex-wrap gap-[1vw] max-w-[70%]">
@@ -82,10 +82,12 @@ const smallCards = ref([
 
     /* Galería de proyectos */
     .projects_gallery
-      padding-top: .2rem
+      padding-top: 2.4rem
       justify-content: center
       align-items: center
-      margin: 2.5vw 2.5vw
+      margin-left: 2.5vw 
+      // margin-right: 2.5vw 
+
       // display: flex
       // flex-direction: column
       // gap: 1rem
@@ -101,7 +103,7 @@ const smallCards = ref([
     .nav_holder
       display: none
     .nav_mobile_holder
-      position: sticky // Se mantiene fija respecto al contenedor que hace scroll 
+      position: fixed // Se mantiene fija respecto al contenedor que hace scroll 
       top: 0 // Queda anclada en la parte superior 
       z-index: 10 // Asegura que esté por encima de otros elementos 
       width: 100%

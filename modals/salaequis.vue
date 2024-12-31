@@ -11,12 +11,12 @@
             personas, estilos y actividades. Esto se traduce de manera directa en un logotipo dinámico, diseñado para
             adaptarse y transformarse según los diferentes usos y eventos del local, reforzando su carácter inclusivo y
             cambiante.</div>
-          <a href="https://faux-noticiario.netlify.app/" class="link enlace_manual" target="_blank"><svg
+          <!-- <a href="https://faux-noticiario.netlify.app/" class="link enlace_manual" target="_blank"><svg
               xmlns="http://www.w3.org/2000/svg" width="23" height="9" fill="none" viewBox="0 0 23 9">
               <path
                 d="M15.655 8.656v-2h3a2 2 0 1 0 0-4h-6a2 2 0 0 0-2 2h-2a4 4 0 0 1 4-4h6a4 4 0 1 1 0 8h-3Zm-8-8v2h-3a2 2 0 1 0 0 4h6a2 2 0 0 0 2-2h2a3.999 3.999 0 0 1-4 4H4.656a4 4 0 0 1 0-8h3Z"
                 clip-rule="evenodd" />
-            </svg>manual de marca</a>
+            </svg>manual de marca</a> -->
         </div>
         <div class="right">
           <div class="big_logo_holder">
@@ -66,17 +66,29 @@
         <div class="svg_cont2" v-html="currentSvg"></div>
       </div>
       <div class="text_mobile hidden">
-        <div class="project_title bg-white title_proj">SALA EQUIS <input type="checkbox" checked class="mobile_title_checkbox cursor-pointer hidden" @click="openMobileText">
+        <div class="text_mobile_top">
+          <div class="project_title title_proj">SALA EQUIS</div>
+          <div class="text_top_right">
+            <p class="home_info_txt info_gray text-sm text-[#bebebe]">info</p>
+            <svg width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4 6.47399C3.57835 6.71291 3.21368 6.95954 2.90598 7.21387C2.59829 7.46821 2.34758 7.73025 2.15385 8L1.84615 8C1.44729 7.46821 0.831909 6.95954 -6.67041e-08 6.47399L-8.43908e-08 6.06936C0.387464 6.19268 0.729345 6.31599 1.02564 6.43931C1.31054 6.56262 1.54986 6.68208 1.74359 6.79769L2.25641 6.79769C2.43875 6.68208 2.67806 6.56262 2.97436 6.43931C3.25926 6.31599 3.60114 6.19268 4 6.06936L4 6.47399ZM2.35897 6.85549L1.64103 6.85549L1.64103 4.05106e-07L2.35897 3.73723e-07L2.35897 6.85549Z"
+                fill="#B7B7B7" />
+            </svg>
+            <div class="checkbox">
+              <CustomCheckbox @click="openMobileText" />
+            </div>
+          </div>
         </div>
         <div class="text_holder font_body_md" v-show="isVisible">
-          <span class="">Identidad gráfica para Sala Equis, icónico espacio madrileño que combina
+          <span class="bg-white">Identidad gráfica para Sala Equis, icónico espacio madrileño que combina
             bar, cine y actividades culturales. La ubicación históricamente ha sido la sede de un periódico, cine X y su
             reinvención como un punto de encuentro contemporáneo, la identidad busca capturar la esencia multifacética
             del lugar, junto a la idea de adaptación y punto de encuentro. Se busca un mensaje de convergencia de
             personas, estilos y actividades. Esto se traduce de manera directa en un logotipo dinámico, diseñado para
             adaptarse y transformarse según los diferentes usos y eventos del local, reforzando su carácter inclusivo y
             cambiante.</span>
-          <span class="annotation"></span>
+          <span class="bg-white annotation"><br></span>
         </div>
       </div>
     </div>
@@ -242,7 +254,7 @@ onBeforeUnmount(() => {
   window.removeEventListener('keydown', handleKeydown);
 });
 
-const isVisible = ref(true);
+const isVisible = ref(false);
 const openMobileText = () => { isVisible.value = !isVisible.value; }
 
 </script>
@@ -335,13 +347,13 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
     // overflow-x: hidden
     width: 100%
     .project_top
-      flex-direction: column
-      width: 100%
+      width: 87%
+      margin-left: auto
       .left
         display: none
-        .enlace_manual
-          &:hover
-            svg
+        // .enlace_manual
+        //   &:hover
+        //     svg
       .right
         width: 100%
         .big_logo_holder
@@ -400,22 +412,44 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
     .text_mobile
       display: block
       width: 100%
+      padding-right: 2.5vw
       position: fixed
-      bottom: -.1rem
-      .project_title
+      bottom: 0
+      .text_mobile_top
         display: flex
-        gap: .5rem
+        width: 100%
+        justify-content: space-between
         align-items: center
         background: white
-        width: fit-content
-        padding-right: 1rem
-        .mobile_title_checkbox
-          display: block
-          transform: scale(1.5)
-          background: white
+
+        margin-bottom: -.8rem
+        .project_title
+          display: flex
+          gap: .5rem
+          align-items: center
+          width: fit-content
+          padding-right: 1rem
+        .text_top_right
+          display: flex
+          gap: .5rem
+          align-items: center
+          width: fit-content
+          padding-left: 1rem
+          height: 100%
+          padding-top: 1.1rem
+          padding-bottom: 1rem
+          padding-right: 2.5vw
+
+          .home_info_txt
+          svg
+            transform: rotate(180deg)
+          .checkbox
       .text_holder
+        width: 100%
         margin-right: 5vw
         background: white
-        padding-bottom: 2vh  
+        padding-top: .5rem
+        padding-right: 2.5vw
+        padding-bottom: 2vh
 
 </style>
