@@ -55,7 +55,15 @@ const cards = ref([
     project_tumbnail: '/img/SALAEQUIS/salaequis_thumbail.webp',
     posterized_thumbnail: '/img/SALAEQUIS/salaequis_trshld.webp',
     page: '/salaequis',
-  }
+  },
+  // {
+  //   id: 4,
+  //   project_title: 'El Grande',
+  //   project_date: 'XX/XXXX',
+  //   project_tumbnail: '/img/elgrande/',
+  //   posterized_thumbnail: '/img/elgrande/',
+  //   page: '/elgrande',
+  // }
 ])
 
 const smallCards = ref([
@@ -67,6 +75,14 @@ const smallCards = ref([
     posterized_thumbnail: '/img/arrow_index/arrows_trshld_thumbnail.webp',
     page: 'arrow_index',
   },
+  {
+    id: 2,
+    project_title: 'Lagrima #3',
+    project_date: '02/2024',
+    project_tumbnail: '/img/lagrima/lagrima_thumb.webp',
+    posterized_thumbnail: '/img/lagrima/lagrima_thumb_trshld.webp',
+    page: 'lagrima',
+  }
 ])
 </script>
 
