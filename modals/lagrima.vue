@@ -5,11 +5,12 @@
         <div class="left">
           <div class="poster_container">
             <img src="/public/img/lagrima/LAGRIMA_3_POSTER.webp" alt="">
-            <img src="/public/img/lagrima/LAGRIMA_3_POSTER_story.webp" alt="">
+            <img class="story" src="/public/img/lagrima/LAGRIMA_3_POSTER_story.webp" alt="">
           </div>
           <div class="image_gallery">
-            <img v-for="(image, index) in imageUrls" :key="index" :src="image" :alt="'Image ' + (index + 1)"
-              class="gallery_img_small" @click="openLightbox(index)" />
+            <div v-for="(image, index) in imageUrls.slice(0, 4)" :key="'first-' + index">
+              <img :src="image" :alt="'Image ' + (index + 1)" class="gallery_img_small" @click="openLightbox(index)" />
+            </div>
           </div>
         </div>
         <div class="right">
@@ -20,6 +21,13 @@
                   d="M15.655 8.656v-2h3a2 2 0 1 0 0-4h-6a2 2 0 0 0-2 2h-2a4 4 0 0 1 4-4h6a4 4 0 1 1 0 8h-3Zm-8-8v2h-3a2 2 0 1 0 0 4h6a2 2 0 0 0 2-2h2a3.999 3.999 0 0 1-4 4H4.656a4 4 0 0 1 0-8h3Z"
                   clip-rule="evenodd" />
               </svg>lagrima.collective</a>
+          </div>
+          <p class="annotation">versiones previas</p>
+          <div class="versions_gallery">
+            <div v-for="(image, index) in imageUrls.slice(4, 8)" :key="'second-' + index">
+              <img :src="image" :alt="'Image ' + (index + 4)" class="gallery_img_small"
+                @click="openLightbox(index + 4)" />
+            </div>
           </div>
           <div class="right_bttm">
             <p class="annotation">refs</p>
@@ -88,7 +96,8 @@
   .right
     display: flex
     flex-direction: column
-    gap: 10vh
+    gap: 2rem
+    align-items: flex-end
     .right_top
       display: flex
       flex-direction: column
@@ -104,17 +113,26 @@
             fill: #ff5e00
         svg
           fill: black
+    .versions_gallery
+      display: flex
+      gap: 5px
+      flex-wrap: wrap
+      .gallery_img_small
+        max-width: 100px
+        object-fit: cover
+        cursor: pointer
     .right_bttm
       display: flex
-      flex-direction: column
-      align-items: flex-end
+      // flex-direction: column
+      // align-items: flex-end
       img
-        width: 100%
+        margin-left: .5rem
+
 .lightbox
   position: fixed
   top: 0
   left: 0
-  right: 0
+  right: 1rem
   bottom: 0
   background: rgba(255, 255, 255, 0.5)
   display: flex
@@ -137,6 +155,72 @@
     overflow-y: auto
     height: 100% // Asegura que ocupe toda la altura del viewport 
     align-items: center
+    width: 100%
+
+    .project_top
+      display: flex
+      flex-direction: column
+      width: 100%
+      margin-top: 4rem
+      .left
+        display: flex
+        flex-direction: column
+        gap:1rem
+        margin-bottom: 1rem
+
+        .poster_container
+          display: flex
+          flex-direction: column
+          gap: 2rem
+          img
+            width: 100%
+          .story
+            // max-width: 70vw
+            display: none
+        .image_gallery
+          display: flex
+          gap: 5px
+          flex-wrap: wrap
+          .gallery_img_small
+            max-width: 60px
+            object-fit: cover
+            cursor: pointer
+      .right
+        display: flex
+        flex-direction: column
+        gap: 2rem
+        align-items: flex-start
+        margin-bottom: 2rem
+        .right_top
+          display: flex
+          flex-direction: column
+          align-items: flex-end
+          gap: 4rem
+          .enlace_lagrima
+            display: flex
+            align-items: center
+            gap: .2rem
+            &:hover
+              color: #ff5e00
+              svg
+                fill: #ff5e00
+            svg
+              fill: black
+        .versions_gallery
+          display: flex
+          gap: 5px
+          flex-wrap: wrap
+          .gallery_img_small
+            max-width: 80px
+            object-fit: cover
+            cursor: pointer
+        .right_bttm
+          display: flex
+          flex-direction: column
+          img
+            margin-left: .5rem
+
+
     .lightbox
       display: none
       .text_mobile
@@ -209,6 +293,10 @@ const imageUrls = ref([
   '/img/lagrima/hello_sasy.webp',
   '/img/lagrima/cute_agression.webp',
   '/img/lagrima/deni.webp',
+  '/img/lagrima/v_1_.webp',
+  '/img/lagrima/v_2_.webp',
+  '/img/lagrima/v_3_.webp',
+  '/img/lagrima/v_4_.webp',
 ]);
 
 // Navegar a la imagen anterior o siguiente

@@ -18,7 +18,7 @@
   bottom: 4rem
   left: 0
   margin: auto
-  background-color: rgba(230, 230 ,230 , 0.8)
+  background-color: rgba(230, 230 ,230 , 0.3)
   border: solid 1px #acacac
   mix-blend-mode: difference
   border-radius: 7px
@@ -26,6 +26,7 @@
 
   svg
     fill: #acacac
+    mix-blend-mode: difference
 .exit_button:hover 
   background-color: white
   svg

@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar_holder w-full flex flex-col  bg-white"> 
+    <div class="navbar_holder w-full flex flex-col  bg-white pt-2"> 
         <div class="nav_top flex justify-between items-end px-[2.5vw]">
         <div class="nav_left flex items-center gap-4">
             <div class="name font_body_md text-nowrap">Carlos Martínez </div>

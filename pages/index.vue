@@ -7,7 +7,7 @@
     </NuxtLayout>
   </div>
 
-  <div class="home mx-auto pt-6 pl-8">
+  <div class="home mx-auto pt-6 pl-8 bg-white">
     <div class="nav_holder fixed bottom-[0] w-full">
       <Navigation />
     </div>
