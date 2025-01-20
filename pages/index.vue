@@ -36,7 +36,7 @@ const cards = ref([
     id: 1,
     project_title: 'Faux',
     project_date: '09/2023',
-    project_tumbnail: '/img/faux/faux_thumbnail.webp',
+    project_tumbnail: '/img/faux/faux_thumb.gif',
     posterized_thumbnail: '/img/faux/faux_trshld_thumbnail_4x.webp',
     page: '/faux',
   },
@@ -44,26 +44,26 @@ const cards = ref([
     id: 2,
     project_title: 'Junicode Modular',
     project_date: '03/2024',
-    project_tumbnail: '/img/junicode/junicode_specimen_thumbnail.webp',
-    posterized_thumbnail: '/img/junicode/junicode_specimen_thumbnail.webp',
+    project_tumbnail: '/img/junicode/junicode_thumb.gif',
+    posterized_thumbnail: '/img/junicode/junicode_thumb_static.gif',
     page: '/junicode',
   },
   {
     id: 3,
     project_title: 'Sala Equis',
     project_date: '12/2023',
-    project_tumbnail: '/img/SALAEQUIS/salaequis_thumbail.webp',
+    project_tumbnail: '/img/SALAEQUIS/salaequis_thumb.gif',
     posterized_thumbnail: '/img/SALAEQUIS/salaequis_trshld.webp',
     page: '/salaequis',
   },
-  // {
-  //   id: 4,
-  //   project_title: 'El Grande',
-  //   project_date: 'XX/XXXX',
-  //   project_tumbnail: '/img/elgrande/',
-  //   posterized_thumbnail: '/img/elgrande/',
-  //   page: '/elgrande',
-  // }
+  {
+    id: 4,
+    project_title: 'El Grande',
+    project_date: '01/2024',
+    project_tumbnail: '/img/elgrande/grande.gif',
+    posterized_thumbnail: '/img/elgrande/grande_thumb.webp',
+    page: '/elgrande',
+  }
 ])
 
 const smallCards = ref([
@@ -79,10 +79,18 @@ const smallCards = ref([
     id: 2,
     project_title: 'Lagrima #3',
     project_date: '02/2024',
-    project_tumbnail: '/img/lagrima/lagrima_thumb.webp',
-    posterized_thumbnail: '/img/lagrima/lagrima_thumb_trshld.webp',
+    project_tumbnail: '/img/lagrima/lagrima.gif',
+    posterized_thumbnail: '/img/lagrima/lagrima_thumn_tresh.webp',
     page: 'lagrima',
-  }
+  },
+  {
+    id: 3,
+    project_title: 'processing sketches',
+    project_date: '05/2024',
+    project_tumbnail: '/img/processing/ppl_ascii.gif',
+    posterized_thumbnail: '/img/processing/processing_thumb1.webp',
+    page: '/',
+  },
 ])
 </script>
 
@@ -95,21 +103,21 @@ const smallCards = ref([
     padding-left: 0
     height: 100vh // Asegura que ocupe toda la altura del viewport 
     background: white
+    width: 100%
     /* Galería de proyectos */
     .projects_gallery
       padding-top: 2.4rem
       justify-content: center
       align-items: center
-      margin-left: 2.5vw 
       margin-bottom: 4rem
       display: grid
       grid-template-columns: repeat(2,1fr)
-      width: 100%  
+      max-width: 100vw  
       gap: 1rem
+      padding-bottom: 4rem
       .card
         grid-column: span 2 
       .small_card
-        width: 100%
     .nav_holder
       display: none
     .nav_mobile_holder

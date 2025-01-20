@@ -1,7 +1,7 @@
 <template>
 
     <NuxtLink :to="page">
-        <div class="project_card flex flex-col w-[10.5vw] h-[30.5vh]" @mouseenter="isHovered = true"
+        <div class="project_card flex flex-col w-[10.5vw] h-[30.5vh] gap-1" @mouseenter="isHovered = true"
             @mouseleave="isHovered = false">
             <!-- Imagen posterizada    100% tienen que ser gifs -->
             <div class="project_posterized_image relative w-full h-full bg-contain bg-center transition-all duration-100 group"
@@ -52,13 +52,11 @@ let props = defineProps({
     visibility: hidden
 .hovered-class 
     visibility: visible
-/* Media query para pantallas móviles (max-width: 640px) */
 @media (max-width: 640px)
-  /* Tarjetas individuales */
   .project_card
-    width: 100% 
-    // height: auto
-    max-width: 100% 
-    margin: 0 auto
+    width: 42.5vw 
+    margin: auto
+    .project_card_bttm 
+        visibility: visible
 
 </style>

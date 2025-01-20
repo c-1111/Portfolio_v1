@@ -7,11 +7,6 @@
             <img src="/public/img/lagrima/LAGRIMA_3_POSTER.webp" alt="">
             <img class="story" src="/public/img/lagrima/LAGRIMA_3_POSTER_story.webp" alt="">
           </div>
-          <div class="image_gallery">
-            <div v-for="(image, index) in imageUrls.slice(0, 4)" :key="'first-' + index">
-              <img :src="image" :alt="'Image ' + (index + 1)" class="gallery_img_small" @click="openLightbox(index)" />
-            </div>
-          </div>
         </div>
         <div class="right">
           <div class="right_top">
@@ -22,46 +17,21 @@
                   clip-rule="evenodd" />
               </svg>lagrima.collective</a>
           </div>
-          <p class="annotation">versiones previas</p>
-          <div class="versions_gallery">
-            <div v-for="(image, index) in imageUrls.slice(4, 8)" :key="'second-' + index">
-              <img :src="image" :alt="'Image ' + (index + 4)" class="gallery_img_small"
-                @click="openLightbox(index + 4)" />
-            </div>
-          </div>
           <div class="right_bttm">
-            <p class="annotation">refs</p>
-            <img src="/public/img/lagrima/lagrima_refs.webp" alt="">
+            <p class="annotation">versiones previas</p>
+            <div class="versions_gallery">
+              <div v-for="(image, index) in imageUrls">
+                <img :src="image" :alt="'Image ' + (index)" class="gallery_img_small" @click="openLightbox(index)" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-
 
       <!-- Lightbox Modal -->
       <div v-if="isLightboxOpen" class="lightbox" @click="closeLightbox">
         <div class="lightbox-content" @click.stop>
           <img :src="imageUrls[selectedImage]" :alt="'Lightbox Image ' + (selectedImage + 1)" />
-        </div>
-      </div>
-      <div class="text_mobile hidden">
-        <div class="text_mobile_top">
-          <div class="project_title title_proj">Title</div>
-          <div class="text_top_right">
-            <p class="home_info_txt info_gray text-sm text-[#bebebe]">info</p>
-            <svg width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M4 6.47399C3.57835 6.71291 3.21368 6.95954 2.90598 7.21387C2.59829 7.46821 2.34758 7.73025 2.15385 8L1.84615 8C1.44729 7.46821 0.831909 6.95954 -6.67041e-08 6.47399L-8.43908e-08 6.06936C0.387464 6.19268 0.729345 6.31599 1.02564 6.43931C1.31054 6.56262 1.54986 6.68208 1.74359 6.79769L2.25641 6.79769C2.43875 6.68208 2.67806 6.56262 2.97436 6.43931C3.25926 6.31599 3.60114 6.19268 4 6.06936L4 6.47399ZM2.35897 6.85549L1.64103 6.85549L1.64103 4.05106e-07L2.35897 3.73723e-07L2.35897 6.85549Z"
-                fill="#B7B7B7" />
-            </svg>
-            <div class="checkbox">
-              <CustomCheckbox @click="openMobileText" />
-            </div>
-          </div>
-        </div>
-        <div class="text_holder font_body_md" v-show="isVisible">
-          <span class="bg-white">text</span>
-          <span class="bg-white annotation"><br></span>
         </div>
       </div>
     </div>
@@ -76,33 +46,28 @@
   display: flex
   justify-content: space-between
   align-items: flex-start
+  height: 70vh
   .left
     display: flex
     flex-direction: column
     gap:2rem
+    height: fit-content
     .poster_container
       display: flex
       gap: 2rem
       img
         max-height: 70vh
-    .image_gallery
-      display: flex
-      gap: 5px
-      flex-wrap: wrap
-      .gallery_img_small
-        max-width: 60px
-        object-fit: cover
-        cursor: pointer
   .right
     display: flex
     flex-direction: column
-    gap: 2rem
-    align-items: flex-end
+    justify-content: space-between
+    height: 100%
     .right_top
       display: flex
       flex-direction: column
       align-items: flex-end
-      gap: 4rem
+      margin-bottom: 2rem
+      justify-content: space-between
       .enlace_lagrima
         display: flex
         align-items: center
@@ -113,20 +78,20 @@
             fill: #ff5e00
         svg
           fill: black
-    .versions_gallery
-      display: flex
-      gap: 5px
-      flex-wrap: wrap
-      .gallery_img_small
-        max-width: 100px
-        object-fit: cover
-        cursor: pointer
     .right_bttm
       display: flex
-      // flex-direction: column
-      // align-items: flex-end
-      img
-        margin-left: .5rem
+      flex-direction: column
+      align-items: flex-end
+      .annotation
+        margin-bottom: .2rem
+      .versions_gallery
+        display: flex
+        gap: 5px
+        flex-wrap: wrap
+        .gallery_img_small
+          max-width: 70px
+          object-fit: cover
+          cursor: pointer
 
 .lightbox
   position: fixed
@@ -144,8 +109,8 @@
   display: flex
   justify-content: center
   align-items: center
-  max-width: 40vw
-  max-height: 40vh
+  max-width: 30vw
+  max-height: 30vh
   width: auto
   height: auto
   object-fit: cover
@@ -165,8 +130,7 @@
       .left
         display: flex
         flex-direction: column
-        gap:1rem
-        margin-bottom: 1rem
+        margin-bottom: .5rem
 
         .poster_container
           display: flex
@@ -175,27 +139,16 @@
           img
             width: 100%
           .story
-            // max-width: 70vw
             display: none
-        .image_gallery
-          display: flex
-          gap: 5px
-          flex-wrap: wrap
-          .gallery_img_small
-            max-width: 60px
-            object-fit: cover
-            cursor: pointer
       .right
         display: flex
         flex-direction: column
-        gap: 2rem
+        gap: 1rem
         align-items: flex-start
-        margin-bottom: 2rem
         .right_top
           display: flex
           flex-direction: column
           align-items: flex-end
-          gap: 4rem
           .enlace_lagrima
             display: flex
             align-items: center
@@ -206,65 +159,32 @@
                 fill: #ff5e00
             svg
               fill: black
-        .versions_gallery
-          display: flex
-          gap: 5px
-          flex-wrap: wrap
-          .gallery_img_small
-            max-width: 80px
-            object-fit: cover
-            cursor: pointer
         .right_bttm
           display: flex
           flex-direction: column
-          img
-            margin-left: .5rem
-
-
-    .lightbox
-      display: none
-      .text_mobile
-        display: block
-        width: 100%
-        padding-right: 2.5vw
-        position: fixed
-        bottom: 0
-        .text_mobile_top
-          display: flex
-          width: 100%
-          justify-content: space-between
-          align-items: center
-          background: white
-
-          margin-bottom: -.8rem
-          .project_title
+          align-items: start
+          .annotation
+            margin-bottom: .8rem
+          .versions_gallery
             display: flex
-            gap: .5rem
-            align-items: center
-            width: fit-content
-            padding-right: 1rem
-          .text_top_right
-            display: flex
-            gap: .5rem
-            align-items: center
-            width: fit-content
-            padding-left: 1rem
-            height: 100%
-            padding-top: 1.1rem
-            padding-bottom: 1rem
-            padding-right: 2.5vw
+            gap: 5px
+            flex-wrap: wrap
+            .gallery_img_small
+              max-width: 70px
+              object-fit: cover
+              cursor: pointer
+  .lightbox
+    margin-inline: auto 2.5vw
+    position: fixed
+    inset: 0
+    background: rgba(255, 255, 255, 0.5)
+    display: flex
+    z-index: 1000
+  .lightbox-content
+    max-width: 80vw
+    width: auto
+    height: auto
 
-            .home_info_txt
-            svg
-              transform: rotate(180deg)
-            .checkbox
-        .text_holder
-          width: 100%
-          margin-right: 5vw
-          background: white
-          padding-top: .5rem
-          padding-right: 2.5vw
-          padding-bottom: 2vh
 </style>
 
 
@@ -289,10 +209,6 @@ onKeyStroke("Escape", handleCloseClick);
 
 // array para meter las fotos de la mini-galeria
 const imageUrls = ref([
-  '/img/lagrima/nando.webp',
-  '/img/lagrima/hello_sasy.webp',
-  '/img/lagrima/cute_agression.webp',
-  '/img/lagrima/deni.webp',
   '/img/lagrima/v_1_.webp',
   '/img/lagrima/v_2_.webp',
   '/img/lagrima/v_3_.webp',

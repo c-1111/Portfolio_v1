@@ -9,8 +9,7 @@
               desde los módulos que la componen. Se trata de la pequeña escala a un proyecto de desarrollo de software
               que
               permita modularizar toda tipografía dada. Junicode es una tipografía open-source desarrollada por Medieval
-              Unicode Font Initiative en base a documentos de 1700-1705. Este proyecto ha sido desarrollado en Fontlab 8
-              para la asignatura de tipografía experimental. </span></div>
+              Unicode Font Initiative en base a documentos de 1700-1705. <br> Desarrollado en Fontlab 8 en el marco de la asignatura tipografía y edición experimental. </span></div>
         </div>
         <div class="right">
           <span class="abc">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</span>
@@ -68,9 +67,9 @@
       </div>
       <div class="text_mobile hidden">
         <div class="text_mobile_top">
-          <div class="project_title title_proj">Title</div>
+          <div class="project_title title_proj">Junicode Modular</div>
           <div class="text_top_right">
-            <p class="home_info_txt info_gray text-sm text-[#bebebe]">Junicode Modular</p>
+            <p class="home_info_txt info_gray text-sm text-[#bebebe]">info</p>
             <svg width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M4 6.47399C3.57835 6.71291 3.21368 6.95954 2.90598 7.21387C2.59829 7.46821 2.34758 7.73025 2.15385 8L1.84615 8C1.44729 7.46821 0.831909 6.95954 -6.67041e-08 6.47399L-8.43908e-08 6.06936C0.387464 6.19268 0.729345 6.31599 1.02564 6.43931C1.31054 6.56262 1.54986 6.68208 1.74359 6.79769L2.25641 6.79769C2.43875 6.68208 2.67806 6.56262 2.97436 6.43931C3.25926 6.31599 3.60114 6.19268 4 6.06936L4 6.47399ZM2.35897 6.85549L1.64103 6.85549L1.64103 4.05106e-07L2.35897 3.73723e-07L2.35897 6.85549Z"
@@ -210,6 +209,8 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
     span
       font-family: "Junicode_mod_var"
       font-size: 24px
+      font-variation-settings: "SQUA" 100, "DEVI" 0
+
 
 .font_playground
   padding-top: 2rem
@@ -232,7 +233,6 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
 
   .sliders
     display: flex
-    // flex-direction: column
     gap: 2vw
   
     .slider_holder
@@ -353,10 +353,8 @@ input[type="range"]
     max-height: 100%
 @media (max-width: 640px)
   .project_cont
-    height: 100%
-    overflow-y: auto
+    height: auto
     overflow-x: hidden
-    height: 100% 
     align-items: center
     display: flex
     flex-direction: column-reverse
@@ -372,10 +370,12 @@ input[type="range"]
         gap: .5rem
         .abc
           line-height: 1.7rem
+          font-variation-settings: "SQUA" 100, "DEVI" 0
+
     .font_playground
       width: 100%
       flex-direction: column
-      padding-bottom: 0
+      padding-bottom:2rem
       height: fit-content
       .module_1
       .font-tester
@@ -384,6 +384,7 @@ input[type="range"]
         .sliders
           flex-direction: column
           width: 100%
+          padding-top: 0
           .slider_holder
             width: 100%
             .size_desktop
@@ -397,7 +398,7 @@ input[type="range"]
           all: unset
           display: block
           max-width: 100vw
-          height: 20vh
+          height: 12vh
           line-height: 0.8
           overflow-y: visible
           overflow-x: hidden
@@ -406,11 +407,18 @@ input[type="range"]
           font-size: inherit
           font-family: inherit
           resize: none
+          padding-top: 3rem
           &::-webkit-scrollbar
             display: none
             scrollbar-width: none
       input[type="range"]
         width: 100%
+        &::-webkit-slider-runnable-track
+          height: 4px
+        &::-webkit-slider-thumb
+          width: 25px
+          height: 13px
+          background-color: rgba(0,0,0,0.2)
       .gallery_holder
         visibility: hidden
         display: none
@@ -434,6 +442,7 @@ input[type="range"]
         align-items: center
         width: fit-content
         padding-right: 1rem
+        padding-left: 2.5vw
       .text_top_right
         display: flex
         gap: .5rem
@@ -443,8 +452,6 @@ input[type="range"]
         height: 100%
         padding-top: 1.1rem
         padding-bottom: 1rem
-        padding-right: 2.5vw
-
         .home_info_txt
         svg
           transform: rotate(180deg)
@@ -454,6 +461,6 @@ input[type="range"]
       margin-right: 5vw
       background: white
       padding-top: .5rem
-      padding-right: 2.5vw
+      padding-inline: 2.5vw
       padding-bottom: 2vh
 </style>
