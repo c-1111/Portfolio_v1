@@ -267,6 +267,7 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
     resize: none
     padding-top: 1rem
     padding-bottom: 3.5rem
+    cursor: text
     // background-color: white
     // transform: scale(2)
     &::-webkit-scrollbar

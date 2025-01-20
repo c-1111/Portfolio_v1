@@ -133,6 +133,7 @@
   row-gap: 1vw
   flex-wrap: wrap
   max-width: 90vw
+
   .gallery_card 
     display: flex
     min-width: 200px
@@ -147,6 +148,8 @@
       background-size: contain
       background-repeat: no-repeat
       background-position: center
+      cursor: pointer
+
     .card_name 
       margin-bottom: -2rem
       align-self: flex-end

@@ -22,7 +22,7 @@
         :project_tumbnail="smallCard.project_tumbnail" :project_date="smallCard.project_date"
         v-bind:project_title="smallCard.project_title" :posterized_thumbnail="smallCard.posterized_thumbnail" />
     </div>
-    
+
   </div>
 </template>
 
@@ -42,11 +42,11 @@ const cards = ref([
   },
   {
     id: 2,
-    project_title: 'Junicode Modular',
-    project_date: '03/2024',
-    project_tumbnail: '/img/junicode/junicode_thumb.gif',
-    posterized_thumbnail: '/img/junicode/junicode_thumb_static.gif',
-    page: '/junicode',
+    project_title: 'El Grande',
+    project_date: '01/2024',
+    project_tumbnail: '/img/elgrande/grande.gif',
+    posterized_thumbnail: '/img/elgrande/grande_thumb.webp',
+    page: '/elgrande',
   },
   {
     id: 3,
@@ -58,12 +58,12 @@ const cards = ref([
   },
   {
     id: 4,
-    project_title: 'El Grande',
-    project_date: '01/2024',
-    project_tumbnail: '/img/elgrande/grande.gif',
-    posterized_thumbnail: '/img/elgrande/grande_thumb.webp',
-    page: '/elgrande',
-  }
+    project_title: 'Junicode Modular',
+    project_date: '03/2024',
+    project_tumbnail: '/img/junicode/junicode_thumb.gif',
+    posterized_thumbnail: '/img/junicode/junicode_thumb_static.gif',
+    page: '/junicode',
+  },
 ])
 
 const smallCards = ref([
@@ -106,7 +106,7 @@ const smallCards = ref([
     width: 100%
     /* Galería de proyectos */
     .projects_gallery
-      padding-top: 2.4rem
+      padding-top: 3.2rem
       justify-content: center
       align-items: center
       margin-bottom: 4rem
@@ -128,4 +128,3 @@ const smallCards = ref([
       background: white
       display: block
   </style>
-

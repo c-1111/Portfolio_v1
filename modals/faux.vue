@@ -33,7 +33,7 @@
       </div>
       <div class="media">
         <a href="https://faux-noticiario.netlify.app/" class="noti" target="_blank">
-          <video autoplay loop muted src="/img/faux/noticiario.webm"></video>
+          <video autoplay loop muted src="/img/faux/noticiario_comp.mp4"></video>
           <div class="link"> <svg xmlns="http://www.w3.org/2000/svg" width="23" height="9" fill="none"
               viewBox="0 0 23 9">
               <path
@@ -42,7 +42,7 @@
             </svg> noticiario</div>
         </a>
         <a href="https://faux-site.netlify.app/" class="site" target="_blank">
-          <video autoplay loop muted src="/img/faux/site.webm"></video>
+          <video autoplay loop muted src="/img/faux/site_comp.mp4"></video>
           <div class="link"> <svg xmlns="http://www.w3.org/2000/svg" width="23" height="9" fill="none"
               viewBox="0 0 23 9">
               <path
@@ -252,6 +252,7 @@ onKeyStroke("Escape", handleCloseClick);
         align-items: center
         gap: .2rem
         width: fit-content
+        cursor: pointer
 
         &:hover
           color: #ff5e00
@@ -271,11 +272,14 @@ onKeyStroke("Escape", handleCloseClick);
   .noti
     video
       height: 20vh
+      cursor: pointer
     .link
       display: flex
       justify-content: end
       align-items: center
       gap: .2rem
+      cursor: pointer
+
       &:hover
         color: #ff5e00
         svg
@@ -283,13 +287,18 @@ onKeyStroke("Escape", handleCloseClick);
       svg
         fill: black
   .site
+    cursor: pointer
     video
       height: 20vh
+      cursor: pointer
+
     .link
       display: flex
       justify-content: end
       align-items: center
       gap: .2rem
+      cursor: pointer
+
       &:hover
         color: #ff5e00
         svg
