@@ -207,6 +207,7 @@
     height: 100% // Asegura que ocupe toda la altura del viewport 
     align-items: center
     width: 100vw
+    overflow-x: hidden
     margin-left: -2.5vw
     .project_top
       display: flex
@@ -231,7 +232,8 @@
       row-gap: 4vw
       flex-wrap: wrap
       max-width: 100%
-      width: 100%
+      width: 100vw
+      overflow-x: hidden
       left: -1rem
       padding-bottom: 4rem
       .gallery_card 
@@ -256,7 +258,7 @@
       position: fixed
       top: 0
       left: 0
-      width: 100%
+      width: 100vw
       height: 100%
       background-color: rgba(255, 255, 255, 0.8)
       color: white

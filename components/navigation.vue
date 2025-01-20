@@ -7,14 +7,14 @@
             </div>
         </div>
         <div v-show="isVisible" class="nav_mid flex gap-[20%] pl-[3vw] pr-[6vw] items-end"> <!-- bg-[#F8F8F8] -->
-            <div class="nav_text fecha_card_proy flex max-w-[90ch]">diseñador enfocado en la experimentación visual
-                y soluciones creativas. Especializado en diseño de identidad, frontend y diseño editorial.</div>
+            <div class="nav_text fecha_card_proy flex max-w-[90ch]">Diseñador enfocado en la experimentación visual
+                y soluciones creativas.</div>
             <div class="nav_contact_links flex gap-4 items-center info_gray">
                 <!-- <a class="linkedin cursor-pointer">linkedin</a> -->
                 <a href="https://www.instagram.com/carlosrsly/" target="_blank" class="instagram cursor-pointer">instagram</a>
                 <a href="https://www.are.na/carlos-martinez/channels" target="_blank" class="arena cursor-pointer">are.na</a>
             </div>
-            <div class="credit fixed bottom-1 text-gray-300 text-xs opacity-50"> © 2024</div>
+            <div class="credit tooltip fixed bottom-1 text-gray-300 text-xs opacity-50"> © 2024 <span class="tooltiptext">fully designed and coded by Carlos Martínez </span> </div>
         </div>
         <div class="nav_right flex">
             <div class="mamil_num flex flex-col info text-right pr-16">
@@ -32,3 +32,29 @@ import CustomCheckbox from '@/components/custom_checkbox.vue'; // Asegúrate de 
 const isVisible = ref(false);
 const openNav = () => { isVisible.value = !isVisible.value; }
 </script>
+
+<style scoped>.tooltip {
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 230px;
+    background-color: #eeeeee;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 1px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -3px;
+    right: 105%;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+</style>

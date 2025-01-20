@@ -355,9 +355,11 @@ input[type="range"]
   .project_cont
     height: auto
     overflow-x: hidden
+    display: block
     align-items: center
     display: flex
     flex-direction: column-reverse
+    overflow-y: hidden
     .project_top
       display: flex
       flex-direction: column
@@ -408,6 +410,7 @@ input[type="range"]
           font-family: inherit
           resize: none
           padding-top: 3rem
+          padding-left: 1rem
           &::-webkit-scrollbar
             display: none
             scrollbar-width: none
