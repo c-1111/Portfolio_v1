@@ -81,7 +81,6 @@ button:hover {
   left: 2.5vw;
   display: flex;
   gap: 1rem;
-  z-index: 9999;
 }
 }
 </style>
