@@ -29,8 +29,6 @@
 
 <script setup>
 import { ref } from 'vue';
-import Navigation_mobile from '~/components/navigation_mobile.vue';
-import LanguageSwitcher from '../components/languageSwitcher.vue';
 
 const cards = ref([
   {
