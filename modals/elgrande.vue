@@ -4,10 +4,7 @@
       <div class="project_top">
         <div class="left">
           <!-- <div class="project_title title_proj">El Grande</div> -->
-          <div class="project_bio font_body_md">Diseño y desarrollo de las aplicaciones de una marca ficticia dentro de
-            la temática "camiones" en el marco de un trabajo universitario centrado en la producción gráfica, artes
-            finales y acabados. El proyecto consta de; una publicación editorial, un desplegable de envolvente, dos
-            piezas textiles, pegatinas, dos diseños de llaveros, dos carteles en formato A1, </div>
+          <div class="project_bio font_body_md">{{ t('elgrande_text') }} </div>
         </div>
         <div class="right">
           <div class="big_logo_holder">
@@ -93,10 +90,7 @@
           </div>
         </div>
         <div class="text_holder font_body_md" v-show="isVisible">
-          <span class="bg-white">Diseño y desarrollo de las aplicaciones de una marca ficticia dentro de
-            la temática "camiones" en el marco de un trabajo universitario centrado en la producción gráfica, artes
-            finales y acabados. El proyecto consta de; una publicación editorial, un desplegable de envolvente, dos
-            piezas textiles, pegatinas, dos diseños de llaveros, dos carteles en formato A1,</span>
+          <span class="bg-white">{{ t('elgrande_text') }}</span>
           <span class="bg-white annotation"></span>
         </div>
       </div>
@@ -336,6 +330,9 @@
 <script setup>
 import { dirname } from "pathe";
 import { ref } from "vue";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n(); // Hook para obtener la función de traducción
 
 
 

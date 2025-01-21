@@ -5,16 +5,8 @@
         <div class="title_text">
           <!-- <div class="project_title title_proj hidden">Faux <input type="checkbox" class="mobile_title_checkbox hidden"></div> -->
           <div class="text_holder font_body_md">
-            <span class="bg-white">Proyecto universitario de obligada temática social. Se abordan las fake news y su
-              distribución en el medio digital, la inteligencia artificial para generación de texto e imagen y el ruido
-              en internet. Se trabaja sobre la estética de la veracidad explorando los noticieros digitales más
-              visitados. El proyecto propone un generador de noticias falsas en el que el usuario es responsable del
-              suceso. El proyecto aborda la identidad visual, el diseño y programación web y el diseño promocional. El
-              resultado final consta de una <b>identidad de marca</b>, una <b>campaña publicitaria</b>, un <b>noticiero
-                digital</b>, una <b>web explicativa</b> y una <b>publicación editorial</b>.</span>
-            <span class="bg-white annotation"> <br><br> A través de una API integrada con un modelo de IA para
-              generación de imagen y texto se formula de forma aleatoria un prompt en base a unas reglas predefinidas y
-              se devuelve a la web un artículo con titular, cuerpo de noticia, autoría, fecha e imagen. </span>
+            <span class="bg-white">{{ t('faux_text') }}</span>
+            <span class="bg-white annotation"> <br><br> {{ t('faux_annotation') }}</span>
           </div>
         </div>
         <div class="big_logo_holder">
@@ -27,7 +19,7 @@
               <path
                 d="M15.655 8.656v-2h3a2 2 0 1 0 0-4h-6a2 2 0 0 0-2 2h-2a4 4 0 0 1 4-4h6a4 4 0 1 1 0 8h-3Zm-8-8v2h-3a2 2 0 1 0 0 4h6a2 2 0 0 0 2-2h2a3.999 3.999 0 0 1-4 4H4.656a4 4 0 0 1 0-8h3Z"
                 clip-rule="evenodd" />
-            </svg> memoria del proyecto</div></a>
+            </svg>{{ t('faux_memoria') }}</div></a>
         </div>
 
       </div>
@@ -39,7 +31,7 @@
               <path
                 d="M15.655 8.656v-2h3a2 2 0 1 0 0-4h-6a2 2 0 0 0-2 2h-2a4 4 0 0 1 4-4h6a4 4 0 1 1 0 8h-3Zm-8-8v2h-3a2 2 0 1 0 0 4h6a2 2 0 0 0 2-2h2a3.999 3.999 0 0 1-4 4H4.656a4 4 0 0 1 0-8h3Z"
                 clip-rule="evenodd" />
-            </svg> noticiario</div>
+            </svg> {{ t('faux_noticiario_link') }}</div>
         </a>
         <a href="https://faux-site.netlify.app/" class="site" target="_blank">
           <video autoplay loop muted controlsList="nofullscreen" src="/img/faux/site_comp.mp4"></video>
@@ -79,16 +71,8 @@
 
         </div>
         <div class="text_holder font_body_md  bg-white" v-show="isVisible">
-          <span class="bg-white">Proyecto universitario de obligada temática social. Se abordan las fake news y su
-            distribución en el medio digital, la inteligencia artificial para generación de texto e imagen y el ruido
-            en internet. Se trabaja sobre la estética de la veracidad explorando los noticieros digitales más
-            visitados. El proyecto propone un generador de noticias falsas en el que el usuario es responsable del
-            suceso. El proyecto aborda la identidad visual, el diseño y programación web y el diseño promocional. El
-            resultado final consta de una <b>identidad de marca</b>, una <b>campaña publicitaria</b>, un <b>noticiero
-              digital</b>, una <b>web explicativa</b> y una <b>publicación editorial</b>.</span>
-          <span class="bg-white annotation"><br> A través de una API integrada con un modelo de IA para
-            generación de imagen y texto se formula de forma aleatoria un prompt en base a unas reglas predefinidas y
-            se devuelve a la web un artículo con titular, cuerpo de noticia, autoría, fecha e imagen. </span>
+          <span class="bg-white">{{ t('faux_text') }}</span>
+          <span class="bg-white annotation"><br>{{ t('faux_annotation') }}</span>
         </div>
       </div>
     </div>
@@ -100,7 +84,9 @@
 import { dirname } from "pathe";
 import { ref, onMounted, onUnmounted } from 'vue';
 import CustomCheckbox from '@/components/custom_checkbox.vue'; // Asegúrate de importar tu componente
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n(); // Hook para obtener la función de traducción
 
 // Lightbox control
 const isLightboxVisible = ref(false);

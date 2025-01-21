@@ -7,14 +7,13 @@
             </div>
         </div>
         <div v-show="isVisible" class="nav_mid flex gap-[20%] pl-[3vw] pr-[6vw] items-end"> <!-- bg-[#F8F8F8] -->
-            <div class="nav_text fecha_card_proy flex max-w-[90ch]">Diseñador enfocado en la experimentación visual
-                y soluciones creativas.</div>
+            <div class="nav_text fecha_card_proy flex max-w-[90ch]">{{ t('nav_text') }}</div>
             <div class="nav_contact_links flex gap-4 items-center info_gray">
                 <!-- <a class="linkedin cursor-pointer">linkedin</a> -->
                 <a href="https://www.instagram.com/carlosrsly/" target="_blank" class="instagram cursor-pointer">instagram</a>
                 <a href="https://www.are.na/carlos-martinez/channels" target="_blank" class="arena cursor-pointer">are.na</a>
             </div>
-            <div class="credit tooltip fixed bottom-1 text-gray-300 text-xs opacity-50"> © 2024 <span class="tooltiptext">fully designed and coded by Carlos Martínez </span> </div>
+            <div class="credit tooltip fixed bottom-1 text-gray-300 text-xs opacity-50"> © 2024 <span class="tooltiptext">{{ t('tooltiptext') }}</span> </div>
         </div>
         <div class="nav_right flex">
             <div class="mamil_num flex flex-col info text-right pr-16">
@@ -28,6 +27,9 @@
 
 <script setup>
 import CustomCheckbox from '@/components/custom_checkbox.vue'; // Asegúrate de importar tu componente
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n(); // Hook para obtener la función de traducción
 
 const isVisible = ref(false);
 const openNav = () => { isVisible.value = !isVisible.value; }

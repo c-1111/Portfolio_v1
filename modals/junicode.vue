@@ -4,12 +4,7 @@
       <div class="project_top">
         <div class="left">
           <div class="project_title title_proj">Junicode Modular</div>
-          <div class="project_bio inline-block font_body_md"><span class="bg-white">Desarrollo de una tipografía modular
-              variable generando la variabilidad
-              desde los módulos que la componen. Se trata de la pequeña escala a un proyecto de desarrollo de software
-              que
-              permita modularizar toda tipografía dada. Junicode es una tipografía open-source desarrollada por Medieval
-              Unicode Font Initiative en base a documentos de 1700-1705. <br> Desarrollado en Fontlab 8 en el marco de la asignatura tipografía y edición experimental. </span></div>
+          <div class="project_bio inline-block font_body_md"><span class="bg-white">{{ t('junicode_text') }} </span></div>
         </div>
         <div class="right">
           <span class="abc">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</span>
@@ -81,7 +76,7 @@
           </div>
         </div>
         <div class="text_holder font_body_md" v-show="isVisible">
-          <span class="bg-white">Desarrollo de una tipografía modular variable generando la variabilidad desde los módulos que la componen. Se trata de la pequeña escala a un proyecto de desarrollo de software que permita modularizar toda tipografía dada. Junicode es una tipografía open-source desarrollada por Medieval Unicode Font Initiative en base a documentos de 1700-1705. Este proyecto ha sido desarrollado en Fontlab 8 para la asignatura de tipografía experimental.</span>
+          <span class="bg-white">{{ t('junicode_text') }} </span>
           <span class="bg-white annotation"><br></span>
         </div>
       </div>
@@ -95,6 +90,9 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue';
 import { dirname } from "pathe";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n(); // Hook para obtener la función de traducción
 
 
 // Referencia para el modal
@@ -120,7 +118,7 @@ const imageUrls = ref([
   '/img/junicode/junicode_6.webp',
 ]);
 
-const userText = ref('Text here !');
+const userText = ref('Text here!');
 
 // Lógica para el lightbox
 const isLightboxOpen = ref(false);

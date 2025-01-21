@@ -1,0 +1,16 @@
+{
+    "nav_text": "Designer focused on visual experimentation and creative solutions.",
+    "tooltiptext":"fully designed and coded by Carlos Martínez",
+    "faux_text":"University project on social issues. Fake news and its distribution in the digital medium, artificial intelligence for text and image generation, and noise on the Internet are addressed. We work on the aesthetics of truthfulness by exploring the most visited digital newscasts. The project proposes a fake news generator in which the user is responsible for the event. The project addresses visual identity, web design and programming, and promotional design. The final result consists of a brand identity, an advertising campaign, a digital newscast, an explanatory website and an editorial publication.",
+    "faux_annotation":"Through an API integrated with an AI model for image and text generation, a prompt is randomly formulated based on predefined rules and an article is returned to the website with headline, news body, authorship, date and image.",
+    "faux_noticiario_link":"digital newspaper",
+    "faux_memoria":"project dossier",
+    "elgrande_text":"Design and development of the applications of a fictitious brand within the theme of ‘trucks’ within the framework of a university project focused on graphic production, final arts and finishes. The project consists of; an editorial publication, an envelope fold-out, two textile pieces, stickers, two key ring designs and three posters in A1 format.",
+    "salaequis_text":"Graphic identity for Sala Equis, an iconic Madrid venue that combinesabar, cinema and cultural activities. The location has historically been the home of a newspaper, cinema X and its invention as a contemporary meeting point, the identity seeks to capture the multifaceted essence of the place, along with the idea of adaptation and meeting point. A message of convergence of people, styles and activities is sought. This translates directly into a dynamic logo, designed to adapt and transform according to the different uses and events of the venue, reinforcing its inclusive and changing character.",
+    "salaequis_manual":"Brand Guidelines",
+    "junicode_text":"Development of a variable modular typography generating variability from the modules that compose it. This is the small scale of a software development project that allows the modularisation of any given typeface. Junicode is an open-source typeface developed by the Medieval Unicode Font Initiative based on documents from 1700-1705. Developed in Fontlab 8 as part of the subject typography and experimental editing.",
+    "lagrima_versiones":"previous versions"
+
+
+
+  }

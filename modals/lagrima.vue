@@ -18,7 +18,7 @@
               </svg>lagrima.collective</a>
           </div>
           <div class="right_bttm">
-            <p class="annotation">versiones previas</p>
+            <p class="annotation">{{ t('lagrima_versiones') }}</p>
             <div class="versions_gallery">
               <div v-for="(image, index) in imageUrls">
                 <img :src="image" :alt="'Image ' + (index)" class="gallery_img_small" @click="openLightbox(index)" />
@@ -191,6 +191,9 @@
 
 <script setup>
 import { dirname } from "pathe";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n(); // Hook para obtener la función de traducción
 
 // Referencia para el modal
 const modalRef = ref(null);

@@ -1,0 +1,13 @@
+{
+    "nav_text": "Diseñador enfocado en la experimentación visual y soluciones creativas.",
+    "tooltiptext":"diseñada y programada por Carlos Martínez",
+    "faux_text":"Proyecto universitario de obligada temática social. Se abordan las fake news y su distribución en el medio digital, la inteligencia artificial para generación de texto e imagen y el ruido en internet. Se trabaja sobre la estética de la veracidad explorando los noticieros digitales más visitados. El proyecto propone un generador de noticias falsas en el que el usuario es responsable del suceso. El proyecto aborda la identidad visual, el diseño y programación web y el diseño promocional. El  resultado final consta de una identidad de marca, una campaña publicitaria, un noticiero digital, una web explicativa y una publicación editorial.",
+    "faux_annotation":"A través de una API integrada con un modelo de IA parageneración de imagen y texto se formula de forma aleatoria un prompt en base a unas reglas predefinidas yse devuelve a la web un artículo con titular, cuerpo de noticia, autoría, fecha e imagen.",
+    "faux_noticiario_link":"noticiario",
+    "faux_memoria":"memoria del proyecto",
+    "elgrande_text":"Diseño y desarrollo de las aplicaciones de una marca ficticia dentro dela temática 'camiones' en el marco de un trabajo universitario centrado en la producción gráfica, artesfinales y acabados. El proyecto consta de; una publicación editorial, un desplegable de envolvente, dospiezas textiles, pegatinas, dos diseños de llaveros y tres carteles en formato A1.",
+    "salaequis_text":"Identidad gráfica para Sala Equis, icónico espacio madrileño que combinabar, cine y actividades culturales. La ubicación históricamente ha sido la sede de un periódico, cine X y sureinvención como un punto de encuentro contemporáneo, la identidad busca capturar la esencia multifacéticadel lugar, junto a la idea de adaptación y punto de encuentro. Se busca un mensaje de convergencia depersonas, estilos y actividades. Esto se traduce de manera directa en un logotipo dinámico, diseñado paraadaptarse y transformarse según los diferentes usos y eventos del local, reforzando su carácter inclusivo ycambiante.",
+    "salaequis_manual":"manual de marca",
+    "junicode_text":"Desarrollo de una tipografía modular variable generando la variabilidad desde los módulos que la componen. Se trata de la pequeña escala a un proyecto de desarrollo de software que permita modularizar toda tipografía dada. Junicode es una tipografía open-source desarrollada por Medieval Unicode Font Initiative en base a documentos de 1700-1705. Desarrollado en Fontlab 8 en el marco de la asignatura tipografía y edición experimental.",
+    "lagrima_versiones":"versiones previas"
+  }

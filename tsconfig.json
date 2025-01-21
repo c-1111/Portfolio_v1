@@ -1,4 +1,26 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json",  // No cambies esta línea, ya que extiende la configuración predeterminada de Nuxt
+
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["@nuxt/types", "@types/node"],  // Mantén estas configuraciones para Nuxt y Node.js
+    "lib": ["dom", "esnext"]
+  },
+  "include": [
+    "nuxt.config.ts",
+    "pages/**/*.ts",
+    "components/**/*.ts",
+    "layouts/**/*.ts",
+    "store/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
+

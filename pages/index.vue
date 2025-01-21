@@ -22,7 +22,7 @@
         :project_tumbnail="smallCard.project_tumbnail" :project_date="smallCard.project_date"
         v-bind:project_title="smallCard.project_title" :posterized_thumbnail="smallCard.posterized_thumbnail" />
     </div>
-
+<LanguageSwitcher />
   </div>
 </template>
 
@@ -30,6 +30,7 @@
 <script setup>
 import { ref } from 'vue';
 import Navigation_mobile from '~/components/navigation_mobile.vue';
+import LanguageSwitcher from '../components/languageSwitcher.vue';
 
 const cards = ref([
   {

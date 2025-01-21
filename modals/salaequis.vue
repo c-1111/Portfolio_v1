@@ -4,19 +4,13 @@
       <div class="project_top">
         <div class="left">
           <!-- <div class="project_title title_proj">Project Title</div> -->
-          <div class="project_bio font_body_md">Identidad gráfica para Sala Equis, icónico espacio madrileño que combina
-            bar, cine y actividades culturales. La ubicación históricamente ha sido la sede de un periódico, cine X y su
-            reinvención como un punto de encuentro contemporáneo, la identidad busca capturar la esencia multifacética
-            del lugar, junto a la idea de adaptación y punto de encuentro. Se busca un mensaje de convergencia de
-            personas, estilos y actividades. Esto se traduce de manera directa en un logotipo dinámico, diseñado para
-            adaptarse y transformarse según los diferentes usos y eventos del local, reforzando su carácter inclusivo y
-            cambiante.</div>
+          <div class="project_bio font_body_md">{{ t('salaequis_text') }}</div>
           <a href="https://drive.google.com/file/d/1f9zciFWHUKOP8fUXZlF8ldWGMbBvB3eS/view?usp=sharing" class="link enlace_manual" target="_blank"><svg
               xmlns="http://www.w3.org/2000/svg" width="23" height="9" fill="none" viewBox="0 0 23 9">
               <path
                 d="M15.655 8.656v-2h3a2 2 0 1 0 0-4h-6a2 2 0 0 0-2 2h-2a4 4 0 0 1 4-4h6a4 4 0 1 1 0 8h-3Zm-8-8v2h-3a2 2 0 1 0 0 4h6a2 2 0 0 0 2-2h2a3.999 3.999 0 0 1-4 4H4.656a4 4 0 0 1 0-8h3Z"
                 clip-rule="evenodd" />
-            </svg>manual de marca</a> 
+            </svg>{{ t('salaequis_manual') }}</a> 
         </div>
         <div class="right">
           <div class="big_logo_holder">
@@ -81,13 +75,7 @@
           </div>
         </div>
         <div class="text_holder font_body_md" v-show="isVisible">
-          <span class="bg-white">Identidad gráfica para Sala Equis, icónico espacio madrileño que combina
-            bar, cine y actividades culturales. La ubicación históricamente ha sido la sede de un periódico, cine X y su
-            reinvención como un punto de encuentro contemporáneo, la identidad busca capturar la esencia multifacética
-            del lugar, junto a la idea de adaptación y punto de encuentro. Se busca un mensaje de convergencia de
-            personas, estilos y actividades. Esto se traduce de manera directa en un logotipo dinámico, diseñado para
-            adaptarse y transformarse según los diferentes usos y eventos del local, reforzando su carácter inclusivo y
-            cambiante.</span>
+          <span class="bg-white">{{ t('salaequis_text') }}</span>
           <span class="bg-white annotation"><br></span>
         </div>
       </div>
@@ -118,6 +106,9 @@
 import { dirname } from "pathe";
 import { ref } from 'vue';
 import { onMounted, onBeforeUnmount } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n(); // Hook para obtener la función de traducción
 
 // Lista de SVGs que quieres mostrar
 const svgList = [

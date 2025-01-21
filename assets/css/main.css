@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: white; /* Fondo claro */
+      color: black; /* Texto oscuro */
+    }
+  }
+@-moz-document url-prefix() {
+    * {
+    background: unset !important;
+    color: unset !important;
+    }
+}
+
 *{
     font-family: 'Univers LT Std';
     cursor: url('/crosscursor.svg') 12 12, auto;
