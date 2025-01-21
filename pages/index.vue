@@ -98,7 +98,7 @@ const smallCards = ref([
 
 <style scoped lang="sass">
 /* Media query para móviles (max-width: 640px) */
-@media (max-width: 640px)
+@media (max-width: 641px)
   .home
     padding-top: 0
     padding-left: 0
