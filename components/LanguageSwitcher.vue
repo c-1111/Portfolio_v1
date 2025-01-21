@@ -31,6 +31,9 @@ const changeLanguage = (lang) => {
   locale.value = lang;
   selectedLanguage.value = lang;  // Actualizar el idioma seleccionado
   Cookies.set('language', lang, { expires: 365 }); // Establecer la cookie por 365 días
+
+    // Recargar la página después de cambiar el idioma
+  window.location.reload();
 };
 
 // Verificar si hay un idioma guardado en la cookie al montar el componente
