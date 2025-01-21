@@ -17,8 +17,7 @@
     </div>
     <div class="nav_bttm mt-4 px-[2.5vw] w-full bg-[#F8F8F8]">
         <div v-show="isVisible" class="nav_mid flex gap-[20%] items-end py-2"> 
-            <div class="nav_text fecha_card_proy flex max-w-[90ch]">diseñador enfocado en la experimentación visual
-                y soluciones creativas. Especializado en diseño de identidad, frontend y diseño editorial.</div>
+            <div class="nav_text fecha_card_proy flex max-w-[90ch]">{{ t('nav_text') }}</div>
             <div class="nav_contact_links flex flex-col gap-2 items-end info_gray">
                 <!-- <a class="linkedin cursor-pointer">linkedin</a> -->
                 <a href="https://www.instagram.com/carlosrsly/" target="_blank" class="instagram cursor-pointer">instagram</a>

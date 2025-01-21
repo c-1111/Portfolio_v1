@@ -8,12 +8,6 @@
       color: black; /* Texto oscuro */
     }
   }
-@-moz-document url-prefix() {
-    * {
-    background: unset !important;
-    color: unset !important;
-    }
-}
 
 *{
     font-family: 'Univers LT Std';
