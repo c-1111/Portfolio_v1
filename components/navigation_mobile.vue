@@ -31,6 +31,10 @@
 
 <script setup>
 import CustomCheckbox from '@/components/custom_checkbox.vue'; // Asegúrate de importar tu componente
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n(); // Hook para obtener la función de traducción
+
 
 const isVisible = ref(false);
 const openNav = () => { isVisible.value = !isVisible.value; }
