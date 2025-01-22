@@ -224,7 +224,8 @@
             transform: scale(1.6)
             transform-origin: center
     .el_grande_gallery
-      display: flex
+      display: grid
+      grid-template-columns: 1fr 1fr
       column-gap: 1vw
       row-gap: 4vw
       flex-wrap: wrap
@@ -233,6 +234,8 @@
       overflow-x: hidden
       left: -1rem
       padding-bottom: 4rem
+      align-items: center
+      margin: auto
       .gallery_card 
         display: flex
         width: 100px
@@ -242,8 +245,8 @@
         transition: transform 0.3s
         padding-bottom: 2rem
         .card_thumbnail 
-          width:180px
-          height: 180px
+          width:120px
+          height: 120px
           background-size: contain
           background-repeat: no-repeat
           background-position: center
@@ -293,7 +296,7 @@
         justify-content: space-between
         align-items: center
         background: white
-
+        padding-bottom: 1rem
         margin-bottom: -.8rem
         .project_title
           display: flex

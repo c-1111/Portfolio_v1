@@ -380,7 +380,7 @@ onKeyStroke("Escape", handleCloseClick);
         justify-content: space-between
         align-items: center
         background: white
-
+        padding-bottom: 1rem
         margin-bottom: -.8rem
         .project_title
           display: flex
