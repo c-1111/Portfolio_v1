@@ -9,7 +9,7 @@
         <div v-show="isVisible" class="nav_mid flex gap-[20%] pl-[3vw] pr-[6vw] items-end"> <!-- bg-[#F8F8F8] -->
             <div class="nav_text fecha_card_proy flex max-w-[90ch]">{{ t('nav_text') }}</div>
             <div class="nav_contact_links flex gap-4 items-center info_gray">
-                <!-- <a href="https://www.linkedin.com/in/carlos-m-/" target="_blank" class="linkedin cursor-pointer">linkedin</a> -->
+                <a href="https://www.linkedin.com/in/carlos-m-/" target="_blank" class="linkedin cursor-pointer">linkedin</a>
                 <a href="https://www.instagram.com/carlosrsly/" target="_blank" class="instagram cursor-pointer">instagram</a>
                 <a href="https://www.are.na/carlos-martinez/channels" target="_blank" class="arena cursor-pointer">are.na</a>
             </div>
