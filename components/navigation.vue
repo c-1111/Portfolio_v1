@@ -17,6 +17,7 @@
         </div>
         <div class="nav_right flex">
             <div class="mamil_num flex flex-col info text-right pr-16">
+                <a :href="cvFilePath" target="_blank" rel="noopener noreferrer" class="arena cursor-pointer pb-2">CV</a>
                 <a href="tel:+34646451283" class="tfn cursor-pointer" target="_blank">(+34) 646 45 1283</a>
                 <a href="mailto:carlos.m.magro@gmail.com?subject=hola!" target="_blank"
                     class="mail cursor-pointer">carlos.m.magro@gmail.com</a>
@@ -29,10 +30,16 @@
 import CustomCheckbox from '@/components/custom_checkbox.vue'; // Asegúrate de importar tu componente
 import { useI18n } from 'vue-i18n';
 
-const { t } = useI18n(); // Hook para obtener la función de traducción
+const { t, locale } = useI18n(); // Hook para obtener la función de traducción
+
+// Ruta dinámica al archivo
+const cvFilePath = computed(() => {
+  return locale.value === 'es' ? '/CV_Carlos_Martinez_2024_ESP.pdf' : '/CV_Carlos_Martinez_2024_ENG.pdf';
+});
 
 const isVisible = ref(false);
 const openNav = () => { isVisible.value = !isVisible.value; }
+
 </script>
 
 <style scoped>.tooltip {
