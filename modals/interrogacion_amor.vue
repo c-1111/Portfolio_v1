@@ -4,8 +4,8 @@
       <div class="project_top">
         <div class="left">
           <div class="poster_container">
-            <img src="/public/img/intamor/---.webp" alt="">
-            <img class="story" src="/public/img/intamor/---.webp" alt="">
+            <!-- <img src="/public/img/intamor/---.webp" alt=""> -->
+            <!-- <img class="story" src="/public/img/intamor/---.webp" alt=""> -->
           </div>
         </div>
         <div class="right">
@@ -15,7 +15,7 @@
                 <path
                   d="M15.655 8.656v-2h3a2 2 0 1 0 0-4h-6a2 2 0 0 0-2 2h-2a4 4 0 0 1 4-4h6a4 4 0 1 1 0 8h-3Zm-8-8v2h-3a2 2 0 1 0 0 4h6a2 2 0 0 0 2-2h2a3.999 3.999 0 0 1-4 4H4.656a4 4 0 0 1 0-8h3Z"
                   clip-rule="evenodd" />
-              </svg>lagrima.collective</a>
+              </svg>aaa</a>
           </div>
           <div class="right_bttm">
             <div class="versions_gallery">
@@ -212,9 +212,9 @@ onKeyStroke("Escape", handleCloseClick);
 
 // array para meter las fotos de la mini-galeria
 const imageUrls = ref([
-  '/public/img/intamor/---.webp',
-  '/public/img/intamor/---.webp',
-  '/public/img/intamor/---.webp',
+  // '/public/img/intamor/---.webp',
+  // '/public/img/intamor/---.webp',
+  // '/public/img/intamor/---.webp',
 
 ]);
 
