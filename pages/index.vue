@@ -95,6 +95,9 @@ const smallCards = ref([
 
 
 <style scoped lang="sass">
+.home
+  background-color: white  // rgb(253, 253, 253) 
+
 /* Media query para móviles (max-width: 640px) */
 @media (max-width: 641px)
   .home

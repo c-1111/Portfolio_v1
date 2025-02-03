@@ -19,8 +19,8 @@
 /* -----------COLOR RESALTADO---------------------------------------------------- */
 
 ::selection {
-    background-color: transparent !important; /* Color de fondo */
-    color: #ff5e00; /* Color del texto */
+    background-color: #3f7fed !important;
+    color: #f5f5f4;
   }
 
 
