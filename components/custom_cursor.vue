@@ -64,6 +64,5 @@ const verticalLineStyle = computed(() => ({
     pointer-events: none;
     z-index: 999;
     mix-blend-mode: overlay;
-
 }
 </style>

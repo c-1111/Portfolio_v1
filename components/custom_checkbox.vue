@@ -1,7 +1,7 @@
 <template>
     <label class="checkbox cursor-pointer">
         <input type="checkbox" name="color" @click="handleClick">
-        <span class="checkmark"></span>
+        <span class="checkmark cursor-pointer"></span>
     </label>
 </template>
 

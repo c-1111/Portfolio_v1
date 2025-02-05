@@ -1,19 +1,19 @@
 <template>
 
     <NuxtLink :to="page">
-        <div class="project_card flex flex-col w-[10.5vw] h-[30.5vh] gap-1" @mouseenter="isHovered = true"
+        <div class="project_card flex flex-col w-[10.5vw] h-[30.5vh] gap-1 cursor-pointer" @mouseenter="isHovered = true"
             @mouseleave="isHovered = false">
             <!-- Imagen posterizada    100% tienen que ser gifs -->
-            <div class="project_posterized_image relative w-full h-full bg-contain bg-center transition-all duration-100 group"
+            <div class="project_posterized_image relative w-full h-full bg-contain bg-center transition-all duration-100 group cursor-pointer"
                 :style="{ backgroundImage: `url(${posterized_thumbnail})` }">
                 <div class="project_image_overlay absolute inset-0 bg-[#eeeeee] mix-blend-screen pointer-events-none">
                 </div>
-                <div class="project_image absolute inset-0 bg-contain bg-center transition-opacity duration-100 opacity-0 group-hover:opacity-100"
+                <div class="project_image absolute inset-0 bg-contain bg-center transition-opacity duration-100 opacity-0 group-hover:opacity-100 cursor-pointer"
                     :style="{ backgroundImage: `url(${project_tumbnail})` }"></div>
             </div>
 
             <!-- Contenido de la tarjeta -->
-            <div class="project_card_bttm flex flex-row items-baseline justify-end">
+            <div class="project_card_bttm flex flex-row items-baseline justify-end cursor-pointer">
                 <div class="project_name fecha_card_proy" :class="{ 'hovered-class': isHovered }"
                     @mouseenter="onHover(true)" @mouseleave="onHover(false)">{{ project_title
                     }}</div>

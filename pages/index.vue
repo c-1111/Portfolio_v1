@@ -97,6 +97,8 @@ const smallCards = ref([
 <style scoped lang="sass">
 .home
   background-color: white  // 
+  cursor: none
+
 
 /* Media query para móviles (max-width: 640px) */
 @media (max-width: 641px)
@@ -119,6 +121,7 @@ const smallCards = ref([
       padding-bottom: 4rem
       .card
         grid-column: span 2 
+        cursor: pointer !important
       .small_card
     .nav_holder
       display: none
