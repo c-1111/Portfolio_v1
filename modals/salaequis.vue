@@ -263,11 +263,14 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
       display: flex
       align-items: center
       gap: .2rem
-      padding-top: 1rem
+      margin-top: 1rem
+      width: fit-content
       &:hover
-        color: #ff5e00
+        background-color: #3f7fed
+        color: #f5f5f4
         svg
-          fill: #ff5e00
+          width: auto
+          fill: #f5f5f4
       svg
         fill: black
   .right
@@ -293,10 +296,6 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
       width: 8vw
       object-fit: cover
       cursor: pointer
-      // box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1)
-      // transition: box-shadow 0.3s ease // Suaviza el cambio
-      // &:hover 
-      //   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.15) // Sombra más intensa en hover
   .lightbox
     position: fixed
     top: 0
@@ -342,9 +341,6 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
       margin-left: auto
       .left
         display: none
-        // .enlace_manual
-        //   &:hover
-        //     svg
       .right
         width: 100%
         .big_logo_holder

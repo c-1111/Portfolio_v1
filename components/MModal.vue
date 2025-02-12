@@ -1,6 +1,6 @@
 <template>
   <div class="relative z-50">
-    <div class="aa fixed inset-0 bg-white bg-opacity-75">
+    <div class="aa fixed inset-0 bg-white bg-opacity-40 backdrop-blur-sm">
       <div class="modal fixed inset-0 pt-4 pl-8 pr-8 ">
         <slot />
       </div>

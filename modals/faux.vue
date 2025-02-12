@@ -241,10 +241,11 @@ onKeyStroke("Escape", handleCloseClick);
         cursor: pointer
 
         &:hover
-          color: #ff5e00
+          background-color: #3f7fed !important
+          color: #f5f5f4
           svg
             width: auto
-            fill: #ff5e00
+            fill: #f5f5f4
         svg
           fill: black
           width: auto
@@ -267,9 +268,10 @@ onKeyStroke("Escape", handleCloseClick);
       cursor: pointer
 
       &:hover
-        color: #ff5e00
+        color: #3f7fed
         svg
-          fill: #ff5e00
+          width: auto
+          fill: #3f7fed
       svg
         fill: black
   .site
@@ -286,9 +288,10 @@ onKeyStroke("Escape", handleCloseClick);
       cursor: pointer
 
       &:hover
-        color: #ff5e00
+        color: #3f7fed
         svg
-          fill: #ff5e00
+          width: auto
+          fill: #3f7fed
       svg
         fill: black
   .lightbox 

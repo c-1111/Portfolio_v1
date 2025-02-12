@@ -1,6 +1,6 @@
 <template>
     <NuxtLink :to="page">
-        <div class="project_card flex flex-col w-[22vw] h-[30.5vh] font_body_md_gris gap-1 cursor-pointer">
+        <div class="project_card flex flex-col w-[19vw] h-[27.5vh] font_body_md_gris gap-1 cursor-pointer">
             <!-- Imagen posterizada    100% tienen que ser gifs -->
             <div class="project_posterized_image relative w-full h-full bg-contain bg-center transition-all duration-100 group cursor-pointer"
                 :style="{ backgroundImage: `url(${posterized_thumbnail})` }">

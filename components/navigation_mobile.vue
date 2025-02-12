@@ -36,7 +36,7 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n(); // Hook para obtener la función de traducción
 
 
-const isVisible = ref(false);
+const isVisible = ref(true);
 const openNav = () => { isVisible.value = !isVisible.value; }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
 
     <NuxtLink :to="page">
-        <div class="project_card flex flex-col w-[10.5vw] h-[30.5vh] gap-1 cursor-pointer" @mouseenter="isHovered = true"
+        <div class="project_card flex flex-col w-[9vw] h-[27.5vh] gap-1 cursor-pointer" @mouseenter="isHovered = true"
             @mouseleave="isHovered = false">
             <!-- Imagen posterizada    100% tienen que ser gifs -->
             <div class="project_posterized_image relative w-full h-full bg-contain bg-center transition-all duration-100 group cursor-pointer"

@@ -42,6 +42,15 @@
     color: #B7B7B7;
 
 }
+
+.bold_gris {
+    font-family: 'Univers LT Std';
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    color: #B7B7B7;
+
+}
 .font_body_md_gris:hover {
     color: #000000;
 

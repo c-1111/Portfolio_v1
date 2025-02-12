@@ -37,7 +37,7 @@ const cvFilePath = computed(() => {
   return locale.value === 'es' ? '/CV_Carlos_Martinez_2024_ESP.pdf' : '/CV_Carlos_Martinez_2024_ENG.pdf';
 });
 
-const isVisible = ref(false);
+const isVisible = ref(true);
 const openNav = () => { isVisible.value = !isVisible.value; }
 
 </script>

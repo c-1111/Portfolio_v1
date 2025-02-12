@@ -8,13 +8,13 @@
   </div>
 
   <div class="home mx-auto pt-6 pl-8 bg-white">
-    <div class="nav_holder fixed bottom-[0] w-full">
+    <div class="nav_holder fixed bottom-[0] w-full z-10">
       <Navigation />
     </div>
     <div class="nav_mobile_holder hidden fixed w-full">
       <Navigation_mobile />
     </div>
-    <div class="projects_gallery flex flex-wrap gap-[1vw] max-w-[70%]">
+    <div class="projects_gallery flex flex-wrap gap-[1vw] max-w-[80%]">
       <Card class="card" v-for="(card) in cards" :page="card.page" :project_tumbnail="card.project_tumbnail"
         :project_date="card.project_date" v-bind:project_title="card.project_title"
         :posterized_thumbnail="card.posterized_thumbnail" />
@@ -32,7 +32,7 @@ import { ref } from 'vue';
 
 const cards = ref([
   {
-    id: 1,
+    id: 2,
     project_title: 'Faux',
     project_date: '09/2023',
     project_tumbnail: '/img/faux/faux_thumb.gif',
@@ -40,15 +40,15 @@ const cards = ref([
     page: '/faux',
   },
   {
-    id: 2,
-    project_title: 'El Grande',
-    project_date: '01/2024',
-    project_tumbnail: '/img/elgrande/grande.gif',
-    posterized_thumbnail: '/img/elgrande/grande_thumb.webp',
-    page: '/elgrande',
+    id: 1,
+    project_title: 'POS printer',
+    project_date: '02/2024',
+    project_tumbnail: '/img/POS_printer/thumbnail.webp',
+    posterized_thumbnail: '/img/POS_printer/thumbnail_tresh.webp',
+    page: '/POS_printer',
   },
   {
-    id: 3,
+    id: 4,
     project_title: 'Sala Equis',
     project_date: '12/2023',
     project_tumbnail: '/img/SALAEQUIS/salaequis_thumb.gif',
@@ -56,24 +56,33 @@ const cards = ref([
     page: '/salaequis',
   },
   {
-    id: 4,
+    id: 3,
+    project_title: 'El Grande',
+    project_date: '01/2024',
+    project_tumbnail: '/img/elgrande/grande.gif',
+    posterized_thumbnail: '/img/elgrande/grande_thumb.webp',
+    page: '/elgrande',
+  },
+  {
+    id: 5,
     project_title: 'Junicode Modular',
     project_date: '03/2024',
     project_tumbnail: '/img/junicode/junicode_thumb.gif',
     posterized_thumbnail: '/img/junicode/junicode_thumb_static.gif',
     page: '/junicode',
   },
+
 ])
 
 const smallCards = ref([
-  {
-    id: 1,
-    project_title: 'Arrow Index',
-    project_date: '02/2024',
-    project_tumbnail: '/img/arrow_index/arrows_thumbnail.gif',
-    posterized_thumbnail: '/img/arrow_index/arrows_trshld_thumbnail.webp',
-    page: 'arrow_index',
-  },
+  // {
+  //   id: 1,
+  //   project_title: 'Arrow Index',
+  //   project_date: '02/2024',
+  //   project_tumbnail: '/img/arrow_index/arrows_thumbnail.gif',
+  //   posterized_thumbnail: '/img/arrow_index/arrows_trshld_thumbnail.webp',
+  //   page: 'arrow_index',
+  // },
   {
     id: 2,
     project_title: 'Lagrima #3',
@@ -84,11 +93,11 @@ const smallCards = ref([
   },
   {
     id: 3,
-    project_title: 'processing sketches',
+    project_title: 'interrogación amor',
     project_date: '05/2024',
-    project_tumbnail: '/img/processing/ppl_ascii.gif',
-    posterized_thumbnail: '/img/processing/processing_thumb1.webp',
-    page: '/',
+    project_tumbnail: '/img/intamor/tumb.webp',
+    posterized_thumbnail: '/img/intamor/thumb_tresh.webp',
+    page: '/interrogacion_amor',
   },
 ])
 </script>

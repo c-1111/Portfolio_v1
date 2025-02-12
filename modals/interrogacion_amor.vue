@@ -4,18 +4,27 @@
       <div class="project_top">
         <div class="left">
           <div class="poster_container">
-            <!-- <img src="/public/img/intamor/---.webp" alt=""> -->
+            <img src="/public/img/intamor/cartel_siroco.webp" alt="">
             <!-- <img class="story" src="/public/img/intamor/---.webp" alt=""> -->
+            <a href="https://open.spotify.com/album/58Tdy1ljxJFNk91vTlC6xU" target="_blank" class="pegatina_holder">
+              <img src="/public/img/intamor/pegat_1.webp"
+                alt="sticker promocional 'Cómo un Ángel Podría Romper mi Corazón'">
+                <p class="annotation">{{ t('pegatina') }}</p>
+            </a>
           </div>
         </div>
         <div class="right">
           <div class="right_top">
-            <a href="https://www.instagram.com/interrogacionamor/" class="link enlace_ia" target="_blank"><svg
-                xmlns="http://www.w3.org/2000/svg" width="23" height="9" viewBox="0 0 23 9">
-                <path
-                  d="M15.655 8.656v-2h3a2 2 0 1 0 0-4h-6a2 2 0 0 0-2 2h-2a4 4 0 0 1 4-4h6a4 4 0 1 1 0 8h-3Zm-8-8v2h-3a2 2 0 1 0 0 4h6a2 2 0 0 0 2-2h2a3.999 3.999 0 0 1-4 4H4.656a4 4 0 0 1 0-8h3Z"
-                  clip-rule="evenodd" />
-              </svg>aaa</a>
+            <div class="videos_holder">
+              <div class="flex flex-row gap-1">
+                <video autoplay muted loop playsinline webkit-playsinline src="/public/img/intamor/vid_promo.mp4"></video>
+                <video autoplay muted loop playsinline webkit-playsinline src="/public/img/intamor/promo4.mp4"></video>
+              </div>
+              <div class="flex flex-row gap-1">
+                <!-- <video autoplay muted loop playsinline webkit-playsinline src="/public/img/intamor/vid_fechas.mp4"></video> -->
+                <video autoplay muted loop playsinline webkit-playsinline src="/public/img/intamor/promo3.mp4"></video>
+              </div>
+            </div>
           </div>
           <div class="right_bttm">
             <div class="versions_gallery">
@@ -23,9 +32,19 @@
                 <img :src="image" :alt="'Image ' + (index)" class="gallery_img_small" @click="openLightbox(index)" />
               </div>
             </div>
-            <p class="annotation">{{ t('fotos_david') }}<a href="https://www.instagram.com/david4bustos/" target="_blank">David Bustos</a></p>
+            <!-- <p class="annotation">{{ t('fotos_david') }}<a href="https://www.instagram.com/david4bustos/" target="_blank">David Bustos</a></p> -->
           </div>
         </div>
+      </div>
+      <div class="project_bttm">
+        <div class="bttm_left">
+        </div>
+        <div class="bttm_right"><a href="https://www.instagram.com/interrogacionamor/" class="link enlace_lagrima"
+            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="9" viewBox="0 0 23 9">
+              <path
+                d="M15.655 8.656v-2h3a2 2 0 1 0 0-4h-6a2 2 0 0 0-2 2h-2a4 4 0 0 1 4-4h6a4 4 0 1 1 0 8h-3Zm-8-8v2h-3a2 2 0 1 0 0 4h6a2 2 0 0 0 2-2h2a3.999 3.999 0 0 1-4 4H4.656a4 4 0 0 1 0-8h3Z"
+                clip-rule="evenodd" />
+            </svg>interrogacionamor</a></div>
       </div>
 
       <!-- Lightbox Modal -->
@@ -54,9 +73,13 @@
     height: fit-content
     .poster_container
       display: flex
-      gap: 2rem
+      gap: 1rem
       img
         max-height: 70vh
+      .pegatina_holder
+        cursor: pointer
+        width: 20vw
+        min-width: 150px
   .right
     display: flex
     flex-direction: column
@@ -66,18 +89,13 @@
       display: flex
       flex-direction: column
       align-items: flex-end
-      margin-bottom: 2rem
-      justify-content: space-between
-      .enlace_ia
+      .videos_holder
         display: flex
-        align-items: center
+        flex-direction: column
         gap: .2rem
-        &:hover
-          color: #ff5e00
-          svg
-            fill: #ff5e00
-        svg
-          fill: black
+        align-items: flex-end
+        video
+          height: 8vw
     .right_bttm
       display: flex
       flex-direction: column
@@ -88,11 +106,32 @@
         display: flex
         gap: 5px
         flex-wrap: wrap
+        justify-content: end
         .gallery_img_small
-          max-width: 70px
+          max-height: 70px
           object-fit: cover
           cursor: pointer
-
+.project_bttm
+  display: flex
+  justify-content: space-between
+  width: auto
+  .bttm_left
+      img
+        width: 100%
+  .bttm_right
+    a
+      margin-top: 2rem
+      display: flex
+      align-items: center
+      gap: .2rem
+      &:hover
+        background-color: #3f7fed !important
+        color: #f5f5f4
+        svg
+          width: auto
+          fill: #f5f5f4
+      svg
+        fill: black
 .lightbox
   position: fixed
   top: 0
@@ -109,8 +148,8 @@
   display: flex
   justify-content: center
   align-items: center
-  max-width: 30vw
-  max-height: 30vh
+  max-height: 40vh
+  max-width: 40vw
   width: auto
   height: auto
   object-fit: cover
@@ -121,7 +160,6 @@
     height: 100% // Asegura que ocupe toda la altura del viewport 
     align-items: center
     width: 100%
-
     .project_top
       display: flex
       flex-direction: column
@@ -131,11 +169,13 @@
         display: flex
         flex-direction: column
         margin-bottom: .5rem
-
         .poster_container
           display: flex
           flex-direction: column
           gap: 2rem
+        .pegatina_holder
+          width: 20vw
+          min-width: 150px
           img
             width: 100%
           .story
@@ -145,34 +185,47 @@
         flex-direction: column
         gap: 1rem
         align-items: flex-start
+        width: 100%
         .right_top
           display: flex
           flex-direction: column
           align-items: flex-end
-          .enlace_ia
+          width: 100%
+          .videos_holder
+            visibility: hidden
             display: flex
-            align-items: center
+            flex-direction: column
             gap: .2rem
-            &:hover
-              color: #ff5e00
-              svg
-                fill: #ff5e00
-            svg
-              fill: black
+            align-items: flex-end
+            width: 100%
+            div
+              flex-direction: column
+              width:auto
+            video
+              width: 100%
         .right_bttm
+          visibility: hidden
           display: flex
           flex-direction: column
           align-items: start
-          .annotation
-            margin-bottom: .8rem
           .versions_gallery
             display: flex
             gap: 5px
             flex-wrap: wrap
             .gallery_img_small
-              max-width: 70px
+              max-width: 60px
               object-fit: cover
               cursor: pointer
+    .project_bttm
+      display: flex
+      justify-content: space-between
+      width: auto
+      .bttm_left
+          img
+            width: 100%
+      .bttm_right
+        a
+          margin-top: 0
   .lightbox
     margin-inline: auto 2.5vw
     position: fixed
@@ -212,9 +265,12 @@ onKeyStroke("Escape", handleCloseClick);
 
 // array para meter las fotos de la mini-galeria
 const imageUrls = ref([
-  // '/public/img/intamor/---.webp',
-  // '/public/img/intamor/---.webp',
-  // '/public/img/intamor/---.webp',
+  // '/img/intamor/zgz29Oct.webp',
+  '/img/intamor/Madrid21Oct.webp',
+  '/img/intamor/cartel_neg.webp',
+  '/img/intamor/pic1.jpg',
+  '/img/intamor/pano1.webp',
+
 
 ]);
 

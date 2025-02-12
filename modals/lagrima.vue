@@ -73,9 +73,11 @@
         align-items: center
         gap: .2rem
         &:hover
-          color: #ff5e00
+          background-color: #3f7fed !important
+          color: #f5f5f4
           svg
-            fill: #ff5e00
+            width: auto
+            fill: #f5f5f4
         svg
           fill: black
     .right_bttm
@@ -153,10 +155,6 @@
             display: flex
             align-items: center
             gap: .2rem
-            &:hover
-              color: #ff5e00
-              svg
-                fill: #ff5e00
             svg
               fill: black
         .right_bttm

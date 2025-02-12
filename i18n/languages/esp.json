@@ -10,6 +10,11 @@
     "salaequis_manual":"manual de marca",
     "junicode_text":"Desarrollo de una tipografía modular variable generando la variabilidad desde los módulos que la componen. Se trata de la pequeña escala a un proyecto de desarrollo de software que permita modularizar toda tipografía dada. Junicode es una tipografía open-source desarrollada por Medieval Unicode Font Initiative en base a documentos de 1700-1705. Desarrollado en Fontlab 8 en el marco de la asignatura tipografía y edición experimental.",
     "lagrima_versiones":"versiones previas",
-    "fotos_david":"fotografías por "
+    "fotos_david":"fotografías por ",
+    "pegatina":"pegatina de promoción",
+    "POS_text":"Trabajo desarrollado en el marco de la asignatura Objeto Interfaz, se trata de un proyecto desarrollado en dos tiempos, primeramente con la premisa de crear un objeto con un único uso; se plantea una máquina que imprime en un ticket a tiempo real el texto que es introducido a mano. Posteriormente nos es asignada una compañía, en mi caso Playboy, para la que aplicar el primer desarrollo. Para esta segunda parte planteo una experiencia en la que a través de la conectividad NFC desde los dispositivos móviles se lancé la impresión de tickets conmemorativos con distintos diseños relacionados con la marca recurriendo al ASCII art. Es un proyecto muy interesante de abordar pero complejo de explicar, puede consultar el desarrollo en el dosier",
+    "POS_agradecimiento":"Profesora: Aida Salán, Agradecimientos: Lourdes Marco, Carlos Aparicio",
+    "dosier_impresora":"dossier del proyecto"
+
 
   }

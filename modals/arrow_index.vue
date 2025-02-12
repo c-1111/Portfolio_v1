@@ -43,9 +43,10 @@
     margin-left: -2vw
     margin-top: 3rem
     &:hover
-      color: #ff5e00
+      background-color: #3f7fed 
+      color: #f5f5f4
       svg
-        fill: #ff5e00
+        fill: #f5f5f4
     svg
       fill: black
       padding-top: .2rem

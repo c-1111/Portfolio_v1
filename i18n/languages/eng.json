@@ -10,7 +10,11 @@
     "salaequis_manual":"Brand Guidelines",
     "junicode_text":"Development of a variable modular typography generating variability from the modules that compose it. This is the small scale of a software development project that allows the modularisation of any given typeface. Junicode is an open-source typeface developed by the Medieval Unicode Font Initiative based on documents from 1700-1705. Developed in Fontlab 8 as part of the subject typography and experimental editing.",
     "lagrima_versiones":"previous versions",
-    "fotos_david":"shot by "
+    "fotos_david":"shot by ",
+    "pegatina":"promo sticker",
+    "POS_text":"Work developed within the framework of the subject Object Interface, this is a project developed in two stages, firstly with the premise of creating an object with a single use; a machine is proposed that prints on a ticket in real time the text that is entered by hand. Subsequently, we are assigned a company, in my case Playboy, for which to apply the first development. For this second part I propose an experience in which, through NFC connectivity from mobile devices, the printing of commemorative tickets with different designs related to the brand is launched using ASCII art. It is a very interesting project to tackle but complex to explain, you can consult the development in the dossier.",
+    "POS_agradecimiento":"Teacher: Aida Salán, Acknowledgements: Lourdes Marco, Carlos Aparicio",
+    "dosier_impresora":"project dossier"
 
 
 
