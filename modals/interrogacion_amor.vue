@@ -266,7 +266,7 @@ onKeyStroke("Escape", handleCloseClick);
 // array para meter las fotos de la mini-galeria
 const imageUrls = ref([
   // '/img/intamor/zgz29Oct.webp',
-  '/img/intamor/Madrid21Oct.webp',
+  // '/img/intamor/Madrid21Oct.webp',
   '/img/intamor/cartel_neg.webp',
   '/img/intamor/pic1.jpg',
   '/img/intamor/pano1.webp',
