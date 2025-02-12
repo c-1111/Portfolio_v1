@@ -34,7 +34,7 @@
                 fill="#B7B7B7" />
             </svg>
             <div class="checkbox">
-              <CustomCheckbox @click="openMobileText" />
+              <Custom_checkbox_not @click="openMobileText" />
             </div>
           </div>
         </div>
@@ -149,6 +149,7 @@
 
 <script setup>
 import { dirname } from "pathe";
+import Custom_checkbox_not from "../components/custom_checkbox_not.vue";
 
 // Referencia para el modal
 const modalRef = ref(null);

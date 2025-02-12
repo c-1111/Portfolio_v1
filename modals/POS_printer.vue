@@ -58,7 +58,7 @@
                 fill="#B7B7B7" />
             </svg>
             <div class="checkbox">
-              <CustomCheckbox @click="openMobileText" />
+              <Custom_checkbox_not @click="openMobileText" />
             </div>
           </div>
         </div>
@@ -151,6 +151,7 @@
     height: 100% // Asegura que ocupe toda la altura del viewport 
     align-items: center
     width: 100%
+    overflow-x: hidden
     .project_top
       flex-direction: column
       .left
@@ -229,6 +230,7 @@
 import { dirname } from "pathe";
 import { useI18n } from 'vue-i18n';
 import Tikets from "../components/tikets.vue";
+import Custom_checkbox_not from "../components/custom_checkbox_not.vue";
 
 const { t } = useI18n(); // Hook para obtener la función de traducción
 

@@ -3,7 +3,7 @@
         <div class="nav_top flex justify-between items-end px-[2.5vw]">
         <div class="nav_left flex items-center gap-4">
             <div class="name font_body_md text-nowrap">Carlos Martínez </div>
-            <div class="checkbox_info flex gap-1"><CustomCheckbox @click="openNav" class="scale-80" />
+            <div class="checkbox_info flex gap-1"><Custom_checkbox_not @click="openNav" class="scale-80" />
                 <p class="home_info_txt info_gray text-sm text-[#bebebe]">+info</p>
             </div>
         </div>
@@ -30,13 +30,13 @@
 </template>
 
 <script setup>
-import CustomCheckbox from '@/components/custom_checkbox.vue'; // Asegúrate de importar tu componente
 import { useI18n } from 'vue-i18n';
+import Custom_checkbox_not from './custom_checkbox_not.vue';
 
 const { t } = useI18n(); // Hook para obtener la función de traducción
 
 
-const isVisible = ref(true);
+const isVisible = ref(false);
 const openNav = () => { isVisible.value = !isVisible.value; }
 </script>
 

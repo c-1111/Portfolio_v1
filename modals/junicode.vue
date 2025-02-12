@@ -71,7 +71,7 @@
                 fill="#B7B7B7" />
             </svg>
             <div class="checkbox">
-              <CustomCheckbox @click="openMobileText" />
+              <Custom_checkbox_not @click="openMobileText" />
             </div>
           </div>
         </div>
@@ -91,6 +91,7 @@
 import { ref, computed, onMounted } from 'vue';
 import { dirname } from "pathe";
 import { useI18n } from 'vue-i18n';
+import Custom_checkbox_not from '../components/custom_checkbox_not.vue';
 
 const { t } = useI18n(); // Hook para obtener la función de traducción
 
