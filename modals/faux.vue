@@ -5,8 +5,8 @@
         <div class="title_text">
           <!-- <div class="project_title title_proj hidden">Faux <input type="checkbox" class="mobile_title_checkbox hidden"></div> -->
           <div class="text_holder font_body_md">
-            <span class="bg-white">{{ t('faux_text') }}</span>
-            <span class="bg-white annotation"> <br><br> {{ t('faux_annotation') }}</span>
+            <span class="font_body_md">{{ t('faux_text') }}</span>
+            <span class="annotation"> <br><br> {{ t('faux_annotation') }}</span>
           </div>
         </div>
         <div class="big_logo_holder">

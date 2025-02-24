@@ -18,7 +18,7 @@
         <div class="nav_right flex">
             <div class="mamil_num flex flex-col info text-right pr-16">
                 <a :href="cvFilePath" target="_blank" rel="noopener noreferrer" class="arena cursor-pointer pb-2">CV</a>
-                <a href="tel:+34646451283" class="tfn cursor-pointer" target="_blank">(+34) 646 45 1283</a>
+                <a href="tel:+34646451283" class="tfn cursor-pointer" target="_blank">(+34) 646 45 12 83</a>
                 <a href="mailto:carlos.m.magro@gmail.com?subject=hola!" target="_blank"
                     class="mail cursor-pointer">carlos.m.magro@gmail.com</a>
             </div>

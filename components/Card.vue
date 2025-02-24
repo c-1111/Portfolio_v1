@@ -13,7 +13,7 @@
             <!-- Contenido de la tarjeta -->
             <div class="project_card_bttm flex flex-row justify-between items-baseline cursor-pointer">
                 <div class="project_name">{{ project_title }}</div>
-                <div class="project_date fecha_card_proy">{{ project_date }}</div>
+                <!-- <div class="project_date fecha_card_proy">{{ project_date }}</div> -->
             </div>
         </div>
     </NuxtLink>
@@ -26,7 +26,7 @@
 let props = defineProps({
     id: Number,
     project_title: String,
-    project_date: String,
+    // project_date: String,
     project_tumbnail: String,
     posterized_thumbnail: String,
     page: String,

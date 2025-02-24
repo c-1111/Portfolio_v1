@@ -76,8 +76,8 @@
           </div>
         </div>
         <div class="text_holder font_body_md" v-show="isVisible">
-          <span class="bg-white">{{ t('junicode_text') }} </span>
-          <span class="bg-white annotation"><br></span>
+          <span class="">{{ t('junicode_text') }} </span>
+          <span class="annotation"><br></span>
         </div>
       </div>
     </div>
