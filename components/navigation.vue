@@ -11,7 +11,7 @@
             <div class="nav_text fecha_card_proy flex flex-col-reverse max-w-[90ch]">{{ t('nav_text') }}
                 <div class="nav_text pb-4 flex flex-col-reverse">
                     <div class="wrap flex items-baseline text-[14px] gap-2 text-[#B7B7B7]">
-                        Design & Front-End Dev intern at <a href="https://works.display.design/" target="_blank"><svg
+                        Front-End Design & Dev intern at <a href="https://works.display.design/" target="_blank"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="73" height="13" fill="none"
                                 viewBox="0 0 86 16">
                                 <path fill="#B7B7B7"
