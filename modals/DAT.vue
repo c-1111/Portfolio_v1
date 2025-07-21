@@ -89,7 +89,7 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
     <div ref="modalRef" class="project_cont">
       <div class="project_top">
         <div class="left">
-          <div class="project_bio font_body_md pb-4">{{ t('DAT_text') }}</div>
+          <div class="project_bio font_body_md pb-4 text-nowrap">{{ t('DAT_text') }}</div>
           <a href="https://www.figma.com/proto/nG2DkgwmjHcXiJGLuB2Bn4/PROTOTIPO_FINAL_CARLOS_MARTINEZ?page-id=0%3A1&node-id=1-34&viewport=826%2C162%2C0.02&t=9ft0pQvlbK5qD0C9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A34"
             class="link enlace_manual" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="9" fill="none" viewBox="0 0 23 9">
@@ -110,8 +110,8 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
       <div class="gallery w-full mt-4">
 
         <div class="cont_item flex flex-row w-full justify-between pt-4">
-          <div class="cont_block flex flex-col">
-            <div class="title_proj">{{ t('DAT_system') }}</div>
+          <div class="cont_block flex flex-col w-full">
+            <div class="title_proj w-full">{{ t('DAT_system') }}</div>
             <div class="cont">
               <div class="image_gallery">
                 <img v-for="(image, index) in imageUrls.slice(0, -6)" :key="index" :src="image"
@@ -120,7 +120,7 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
             </div>
           </div>
 
-          <div class="cont_block flex flex-col">
+          <div class="cont_block flex flex-col w-full">
             <div class="title_proj">{{ t('DAT_index') }}</div>
             <div class="cont flex">
               <img class="contimg desktop" src="/img/DAT/gif_desktop2.gif" alt="" @click="openLightbox(7)">
@@ -138,8 +138,8 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
               <img class="contimg" src="/img/DAT/scans_editorial.gif" alt="" @click="openLightbox(6)">
             </div>
           </div>
-          <div class="cont_block flex flex-col">
-            <div class="title_proj">{{ t('DAT_article') }}</div>
+          <div class="cont_block flex flex-col w-full">
+            <div class="title_proj w-full">{{ t('DAT_article') }}</div>
             <div class="cont flex">
               <img class="contimg desktop" src="/img/DAT/gif_desktoparticle.gif" alt="" @click="openLightbox(9)">
               <img class="contimg mobile" src="/img/DAT/gif_mobilearticle.gif" alt="" @click="openLightbox(10)">
@@ -163,7 +163,7 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
       </div>
       <div class="text_mobile hidden">
         <div class="text_mobile_top">
-          <div class="project_title_proj title_proj_proj">.DAT</div>
+          <div class="project_title_proj title_proj">.DAT</div>
           <div class="text_top_right">
             <p class="home_info_txt info_gray text-sm text-[#bebebe]">info</p>
             <svg width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -304,7 +304,7 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
             max-height: 50vh
             object-fit: contain
           .mobile
-            width: 40%
+            width: 35%
           .desktop
             width: 140%
         .editorial

@@ -1,8 +1,8 @@
 <!-- ---------------------- ESTE ES EL HOME --------------- -->
 <template>
   <div>
+    <CustomCursor class="hidecursor" />
     <NuxtLayout>
-      <CustomCursor class="hide-cursor-mobile" />
 
     </NuxtLayout>
   </div>
@@ -149,6 +149,7 @@ const smallCards = ref([
       width: 100%
       background: white
       display: block
-    .hide-cursor-mobile
-      display: none   
+  .hidecursor
+    display: none 
+    visibility: hidden
   </style>
