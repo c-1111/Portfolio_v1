@@ -285,7 +285,6 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
         width: 100%
         svg
           width: 100%
-          transform: scale(1.2)
   .gallery
     display: flex
     flex-direction: column
@@ -296,6 +295,9 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
       gap:2rem
 
       .cont_block
+        .title_proj
+          text-wrap: nowrap
+
         .cont
           img
             width: 100%
