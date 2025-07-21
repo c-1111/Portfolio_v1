@@ -21,16 +21,16 @@ export default defineNuxtConfig({
     langDir: 'languages',
     locales: [
       {
-        code: 'en',
-        iso: 'en',
-        name: 'English',
-        file: 'eng.json',
-      },
-      {
         code: 'es',
         iso: 'es',
         name: 'Español',
         file: 'esp.json',
+      },
+      {
+        code: 'en',
+        iso: 'en',
+        name: 'English',
+        file: 'eng.json',
       },
     ],
     defaultLocale: 'es',

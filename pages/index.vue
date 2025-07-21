@@ -1,8 +1,8 @@
 <!-- ---------------------- ESTE ES EL HOME --------------- -->
 <template>
-  <CustomCursor />
   <div>
     <NuxtLayout>
+      <CustomCursor />
 
     </NuxtLayout>
   </div>
@@ -22,7 +22,7 @@
         :project_tumbnail="smallCard.project_tumbnail" :project_date="smallCard.project_date"
         v-bind:project_title="smallCard.project_title" :posterized_thumbnail="smallCard.posterized_thumbnail" />
     </div>
-<LanguageSwitcher />
+    <LanguageSwitcher />
   </div>
 </template>
 
@@ -32,12 +32,12 @@ import { ref } from 'vue';
 
 const cards = ref([
   {
-    id: 2,
-    project_title: 'Faux',
-    project_date: '09/2023',
-    project_tumbnail: '/img/faux/faux_thumb.gif',
-    posterized_thumbnail: '/img/faux/faux_trshld_thumbnail_4x.webp',
-    page: '/faux',
+    id: 6,
+    project_title: '.DAT',
+    project_date: '03/2025',
+    project_tumbnail: '/img/DAT/hardDrive.gif',
+    posterized_thumbnail: '/img/DAT/hardDrive.gif',
+    page: '/DAT',
   },
   {
     id: 1,
@@ -70,6 +70,14 @@ const cards = ref([
     project_tumbnail: '/img/junicode/junicode_thumb.gif',
     posterized_thumbnail: '/img/junicode/junicode_thumb_static.gif',
     page: '/junicode',
+  },
+  {
+    id: 2,
+    project_title: 'Faux',
+    project_date: '09/2023',
+    project_tumbnail: '/img/faux/faux_thumb.gif',
+    posterized_thumbnail: '/img/faux/faux_trshld_thumbnail_4x.webp',
+    page: '/faux',
   },
 
 ])

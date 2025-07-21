@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import Custom_cursor from './custom_cursor.vue';
+
+</script>
+
 <template>
   <div class="relative z-50">
     <div class="aa fixed inset-0 bg-white bg-opacity-40 backdrop-blur-sm">
@@ -9,7 +14,16 @@
 </template>
 
 <style scoped lang="sass">
-@media (max-width: 640px)
+// .modal
+//   overflow-y: auto
+//   max-height: 100vh
+//   padding-bottom: 8rem
+//   overflow-y: scroll
+//   scrollbar-width: none
+//   -ms-overflow-style: none 
+// .modal::-webkit-scrollbar 
+//   display: none
+
   .aa
     --tw-bg-opacity: 0.9
     .modal

@@ -1,20 +1,24 @@
 {
-    "nav_text": "Diseñador enfocado en la experimentación visual y soluciones creativas.",
-    "tooltiptext":"diseñada y programada por Carlos Martínez",
-    "faux_text":"Proyecto universitario de obligada temática social. Se abordan las fake news y su distribución en el medio digital, la inteligencia artificial para generación de texto e imagen y el ruido en internet. Se trabaja sobre la estética de la veracidad explorando los noticieros digitales más visitados. El proyecto propone un generador de noticias falsas en el que el usuario es responsable del suceso. El proyecto aborda la identidad visual, el diseño y programación web y el diseño promocional. El resultado final consta de una identidad de marca, una campaña publicitaria, un noticiero digital, una web explicativa y una publicación editorial.",
-    "faux_annotation":"A través de una API integrada con un modelo de IA parageneración de imagen y texto se formula de forma aleatoria un prompt en base a unas reglas predefinidas yse devuelve a la web un artículo con titular, cuerpo de noticia, autoría, fecha e imagen.",
-    "faux_noticiario_link":"noticiario",
-    "faux_memoria":"memoria del proyecto",
-    "elgrande_text":"Diseño y desarrollo de las aplicaciones de una marca ficticia dentro de la temática 'camiones' en el marco de un trabajo universitario centrado en la producción gráfica, artes finales y acabados. El proyecto consta de; una publicación editorial, un desplegable de envolvente, serigrafía en dos piezas textiles, pegatinas, dos diseños de llaveros y tres carteles en formato A1.",
-    "salaequis_text":"Identidad gráfica para Sala Equis, icónico espacio madrileño que combina bar, cine y actividades culturales. La ubicación históricamente ha sido la sede de un periódico, cine X y su reinvención como un punto de encuentro contemporáneo, la identidad busca capturar la esencia multifacética del lugar, junto a la idea de adaptación y punto de encuentro. Se busca un mensaje de convergencia de personas, estilos y actividades. Esto se traduce de manera directa en un logotipo dinámico, diseñado para adaptarse y transformarse según los diferentes usos y eventos del local, reforzando su carácter inclusivo y cambiante.",
-    "salaequis_manual":"manual de marca",
-    "junicode_text":"Desarrollo de una tipografía modular variable generando la variabilidad desde los módulos que la componen. Se trata de la pequeña escala a un proyecto de desarrollo de software que permita modularizar toda tipografía dada. Junicode es una tipografía open-source desarrollada por Medieval Unicode Font Initiative en base a documentos de 1700-1705. Desarrollado en Fontlab 8 en el marco de la asignatura tipografía y edición experimental.",
-    "lagrima_versiones":"versiones previas",
-    "fotos_david":"fotografías por ",
-    "pegatina":"pegatina de promoción",
-    "POS_text":"Trabajo desarrollado en el marco de la asignatura Objeto Interfaz, se trata de un proyecto desarrollado en dos tiempos, primeramente con la premisa de crear un objeto con un único uso; se plantea una máquina que imprime en un ticket a tiempo real el texto que es introducido a mano. Posteriormente nos es asignada una compañía, en mi caso Playboy, para la que aplicar el primer desarrollo. Para esta segunda parte planteo una experiencia en la que a través de la conectividad NFC desde los dispositivos móviles se lancé la impresión de tickets conmemorativos con distintos diseños relacionados con la marca recurriendo al ASCII art. Es un proyecto muy interesante de abordar pero complejo de explicar, puede consultar el desarrollo en el dosier",
-    "POS_agradecimiento":"Profesora: Aida Salán, Agradecimientos: Lourdes Marco, Carlos Aparicio",
-    "dosier_impresora":"dossier del proyecto"
-
-
-  }
+  "nav_text": "Diseñador enfocado en la experimentación visual y soluciones creativas.",
+  "tooltiptext": "diseñada y programada por Carlos Martínez",
+  "faux_text": "Proyecto universitario de obligada temática social. Se abordan las fake news y su distribución en el medio digital, la inteligencia artificial para generación de texto e imagen y el ruido en internet. Se trabaja sobre la estética de la veracidad explorando los noticieros digitales más visitados. El proyecto propone un generador de noticias falsas en el que el usuario es responsable del suceso. El proyecto aborda la identidad visual, el diseño y programación web y el diseño promocional. El resultado final consta de una identidad de marca, una campaña publicitaria, un noticiero digital, una web explicativa y una publicación editorial.",
+  "faux_annotation": "A través de una API integrada con un modelo de IA parageneración de imagen y texto se formula de forma aleatoria un prompt en base a unas reglas predefinidas yse devuelve a la web un artículo con titular, cuerpo de noticia, autoría, fecha e imagen.",
+  "faux_noticiario_link": "noticiario",
+  "faux_memoria": "memoria del proyecto",
+  "elgrande_text": "Diseño y desarrollo de las aplicaciones de una marca ficticia dentro de la temática 'camiones' en el marco de un trabajo universitario centrado en la producción gráfica, artes finales y acabados. El proyecto consta de; una publicación editorial, un desplegable de envolvente, serigrafía en dos piezas textiles, pegatinas, dos diseños de llaveros y tres carteles en formato A1.",
+  "salaequis_text": "Identidad gráfica para Sala Equis, icónico espacio madrileño que combina bar, cine y actividades culturales. La ubicación históricamente ha sido la sede de un periódico, cine X y su reinvención como un punto de encuentro contemporáneo, la identidad busca capturar la esencia multifacética del lugar, junto a la idea de adaptación y punto de encuentro. Se busca un mensaje de convergencia de personas, estilos y actividades. Esto se traduce de manera directa en un logotipo dinámico, diseñado para adaptarse y transformarse según los diferentes usos y eventos del local, reforzando su carácter inclusivo y cambiante.",
+  "salaequis_manual": "manual de marca",
+  "junicode_text": "Desarrollo de una tipografía modular variable generando la variabilidad desde los módulos que la componen. Se trata de la pequeña escala a un proyecto de desarrollo de software que permita modularizar toda tipografía dada. Junicode es una tipografía open-source desarrollada por Medieval Unicode Font Initiative en base a documentos de 1700-1705. Desarrollado en Fontlab 8 en el marco de la asignatura tipografía y edición experimental.",
+  "lagrima_versiones": "versiones previas",
+  "fotos_david": "fotografías por ",
+  "pegatina": "pegatina de promoción",
+  "POS_text": "Trabajo desarrollado en el marco de la asignatura Objeto Interfaz, se trata de un proyecto desarrollado en dos tiempos, primeramente con la premisa de crear un objeto con un único uso; se plantea una máquina que imprime en un ticket a tiempo real el texto que es introducido a mano. Posteriormente nos es asignada una compañía, en mi caso Playboy, para la que aplicar el primer desarrollo. Para esta segunda parte planteo una experiencia en la que a través de la conectividad NFC desde los dispositivos móviles se lancé la impresión de tickets conmemorativos con distintos diseños relacionados con la marca recurriendo al ASCII art. Es un proyecto muy interesante de abordar pero complejo de explicar, puede consultar el desarrollo en el dosier",
+  "POS_agradecimiento": "Profesora: Aida Salán, Agradecimientos: Lourdes Marco, Carlos Aparicio",
+  "dosier_impresora": "dossier del proyecto",
+  "DAT_text": "Este proyecto, desarrollado como parte de un Trabajo de Fin de Estudios, investiga el almacenamiento y la influencia de los datos digitales mediante el diseño e implementación de una plataforma web interactiva que recopila artículos, junto con un producto editorial que traduce este contenido al formato físico. Desde la fase inicial de investigación, se ha seguido un proceso basado en metodologías de diseño tradicionales y experimentales, dando lugar a un sistema de diseño digital escalable, también aplicado al soporte impreso. La experiencia de lectura propuesta va más allá de lo informativo, incorporando un enfoque lúdico y dinámico que, a través de una narrativa abierta, microinteracciones y recursos visuales, promueve la exploración activa y una comunicación clara y accesible.",
+  "DAT_prototype": "Prueba el prototipo",
+  "DAT_system": "Sistema de Diseño",
+  "DAT_index": "Home / Index",
+  "DAT_article": "Artículo",
+  "DAT_editorial": "Editorial"
+}

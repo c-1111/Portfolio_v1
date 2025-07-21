@@ -11,7 +11,8 @@
 
 *{
     font-family: 'Univers LT Std';
-    cursor: url('/crosscursor.svg') 12 12, auto;
+    /* cursor: url('/crosscursor.svg') 12 12, auto; */
+    cursor: none;
     color: #000000;
 }
 
