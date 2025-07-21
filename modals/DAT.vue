@@ -89,7 +89,7 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
     <div ref="modalRef" class="project_cont">
       <div class="project_top">
         <div class="left">
-          <div class="project_bio font_body_md pb-4 text-nowrap">{{ t('DAT_text') }}</div>
+          <div class="project_bio font_body_md pb-4">{{ t('DAT_text') }}</div>
           <a href="https://www.figma.com/proto/nG2DkgwmjHcXiJGLuB2Bn4/PROTOTIPO_FINAL_CARLOS_MARTINEZ?page-id=0%3A1&node-id=1-34&viewport=826%2C162%2C0.02&t=9ft0pQvlbK5qD0C9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A34"
             class="link enlace_manual" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="9" fill="none" viewBox="0 0 23 9">
@@ -108,7 +108,6 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
       </div>
 
       <div class="gallery w-full mt-4">
-
         <div class="cont_item flex flex-row w-full justify-between pt-4">
           <div class="cont_block flex flex-col w-full">
             <div class="title_proj w-full text-nowrap">{{ t('DAT_system') }}</div>
@@ -293,11 +292,8 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
       display: flex
       flex-direction: column
       gap:2rem
-
       .cont_block
         .title_proj
-          text-wrap: nowrap
-
         .cont
           img
             width: 100%

@@ -1,6 +1,5 @@
 {
-  "extends": "./.nuxt/tsconfig.json",  // No cambies esta línea, ya que extiende la configuración predeterminada de Nuxt
-
+  "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
@@ -9,8 +8,14 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "types": ["@nuxt/types", "@types/node"],  // Mantén estas configuraciones para Nuxt y Node.js
-    "lib": ["dom", "esnext"]
+    "types": [
+      "@nuxt/types",
+      "@types/node"
+    ],
+    "lib": [
+      "dom",
+      "esnext"
+    ]
   },
   "include": [
     "nuxt.config.ts",
@@ -23,4 +28,3 @@
     "node_modules"
   ]
 }
-
