@@ -111,7 +111,7 @@ const openMobileText = () => { isVisible.value = !isVisible.value; }
 
         <div class="cont_item flex flex-row w-full justify-between pt-4">
           <div class="cont_block flex flex-col w-full">
-            <div class="title_proj w-full">{{ t('DAT_system') }}</div>
+            <div class="title_proj w-full text-nowrap">{{ t('DAT_system') }}</div>
             <div class="cont">
               <div class="image_gallery">
                 <img v-for="(image, index) in imageUrls.slice(0, -6)" :key="index" :src="image"
