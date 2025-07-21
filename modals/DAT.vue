@@ -79,7 +79,7 @@ const closeLightbox = () => {
   isLightboxOpen.value = false;
 };
 
-const isVisible = ref(true);
+const isVisible = ref(false);
 const openMobileText = () => { isVisible.value = !isVisible.value; }
 
 </script>
