@@ -14,16 +14,7 @@ import Custom_cursor from './custom_cursor.vue';
 </template>
 
 <style scoped lang="sass">
-// .modal
-//   overflow-y: auto
-//   max-height: 100vh
-//   padding-bottom: 8rem
-//   overflow-y: scroll
-//   scrollbar-width: none
-//   -ms-overflow-style: none 
-// .modal::-webkit-scrollbar 
-//   display: none
-
+@media (max-width: 640px)
   .aa
     --tw-bg-opacity: 0.9
     .modal
